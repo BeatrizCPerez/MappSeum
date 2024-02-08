@@ -1,0 +1,30 @@
+nav, footer {
+    background-color: #B19470;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+nav {
+    height: 100px;
+
+}
+
+footer {
+    height: 50px;
+
+}
+
+footer img {
+    height: 30px;
+    margin-top: 5px;
+}
+
+footer div {
+    display: flex;
+    gap: 15px;
+}
