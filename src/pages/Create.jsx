@@ -4,7 +4,7 @@ import Form from '../components/Form'
 const Create = () => {
   return (
       <>
-      <h1>AÑADE UNA NUEVA OBRA</h1>
+      <h1 className="form-title">AÑADE UNA NUEVA OBRA</h1>
       <Form/>
       </>
   )

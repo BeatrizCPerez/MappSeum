@@ -41,7 +41,7 @@ form button:hover {
     box-shadow: 0 0 10px #43766c;
 }
 
-form h1 {
+.form-title {
     font-family: "Merriweather", sans-serif;
     text-align: center;
     color: #43766c;
