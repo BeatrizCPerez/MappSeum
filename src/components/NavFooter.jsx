@@ -1,15 +1,13 @@
 import React from 'react'
+import "./NavFooter.css"
 
-const Nav = () => {
+const NavFooter = () => {
   return (
-    <nav class="menu">
-  <ul>
-    <li><a href="#">Inicio</a></li>
-    <li><a href="#">Sobre nosotros</a></li>
-    <li><a href="#">Contacto</a></li>
-  </ul>
-</nav>
+    <nav className="menu">
+      <a><img src="src\assets\logo.png"/></a>
+      <button>Agregar escultura</button>
+    </nav>
   )
 }
 
-export default Nav
+export default NavFooter
