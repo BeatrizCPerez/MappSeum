@@ -1,8 +1,8 @@
 .boton-eliminar {
-    background-color: #8B4513; /* Código de color para marrón */
+    background-color: #500707; /* Código de color para marrón */
     color: white;
     border: 2px solid white;
-        border-radius: 10px;
+        border-radius: 20px;
         padding: 10px 20px;
         cursor: pointer;
         font-size: 16px;
