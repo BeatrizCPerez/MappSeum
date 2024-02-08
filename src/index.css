@@ -1,0 +1,43 @@
+body{
+    background-color: #F8FAE5;
+   }
+
+.container-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200vh; /* Ajusta la altura según tus necesidades */
+  }
+  
+h1{
+    font-size: 33px;
+    font-weight: bold;
+
+}
+
+.regular-titulo{
+    font-weight: lighter;
+    margin-bottom: -1%;
+}
+
+.primer-titulo{
+    margin-left: -25.5%;
+    margin-bottom: -4.5%;
+}
+
+
+img{
+    height: 30vw;
+    width: 25vw;
+}
+
+.texto, .texto2{
+    margin-top: -50%;
+    margin-left: 50%;
+}
+
+
+.texto2{
+    margin-top: -2%;
+}

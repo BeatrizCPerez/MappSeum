@@ -1,5 +1,7 @@
 {
-    "esculturas":[
-
+    "esculturas": [
+      { "id": 1, "title": "David", "author": "Miguel Angel", "imageUrl": "./public/marcos.png" },
+      { "id": 2, "title": "David", "author": "Lagioconda", "imageUrl": "imagen1.jpg" }
     ]
-}
+  }
+  
