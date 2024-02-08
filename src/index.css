@@ -8,6 +8,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 200vh; /* Ajusta la altura según tus necesidades */
+    margin-top: -2%;
   }
   
 h1{
@@ -43,8 +44,8 @@ h1{
 }
 
 .logo-circular{
-    margin-left: 40%;
+    margin-left: 38%;
     margin-bottom: -6%;
-    height: 10%;
-    width: 13%;
+    height: 8%;
+    width: 11%;
 }
