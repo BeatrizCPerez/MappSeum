@@ -1,0 +1,19 @@
+.boton-modificar {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 20%;
+    margin-left: 50% ;
+    margin-top: 3%;
+  }
+  
+  .boton-modificar:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+  }
+  
