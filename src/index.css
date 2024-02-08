@@ -54,5 +54,9 @@ h1{
   and (min-device-width: 375px) {
     .texto, .texto2{
         font-size: 10px;}
+    .container-center{
+        height: 165vw;
 
+        }
+    
   }

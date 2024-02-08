@@ -20,8 +20,9 @@
   @media only screen 
   and (min-device-width: 375px) {
     .boton-modificar{
-        height: 40px;
-        width:100px;
+        height: 30px;
+        width:80px;
+        font-size: 11px;
 
 }
   }

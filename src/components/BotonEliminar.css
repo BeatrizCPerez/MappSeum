@@ -18,3 +18,12 @@
     font-weight: bold;
   }
   
+  @media only screen 
+  and (min-device-width: 375px) {
+    .boton-eliminar{
+        height: 30px;
+        width:80px;
+        font-size: 11px;
+
+}
+  }
