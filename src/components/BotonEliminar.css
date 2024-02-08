@@ -19,7 +19,8 @@
   }
   
   @media only screen 
-  and (min-device-width: 375px) {
+  and (min-width: 375px) 
+  and (max-width: 1000px) {
     .boton-eliminar{
         height: 30px;
         width:80px;
