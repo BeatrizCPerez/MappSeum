@@ -17,7 +17,7 @@ const StyledCard = styled.div`
 
 
 const Card = () => {
-  return <StyledCard><img src="src\assets\margo.png" alt="" /><h1 className="texto">Obra: David</h1><h1 className="texto2">Autor: Miguel Angel</h1></StyledCard>;
+  return <StyledCard><img src="src\assets\margo.png" class="img-obra" alt="" /><h1 className="texto">Obra: David</h1><h1 className="texto2">Autor: Miguel Angel</h1></StyledCard>;
 };
 
 export default Card; 
