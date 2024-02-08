@@ -11,12 +11,10 @@ nav, footer {
 
 nav {
     height: 100px;
-
 }
 
 footer {
     height: 50px;
-
 }
 
 footer img {
@@ -27,4 +25,26 @@ footer img {
 footer div {
     display: flex;
     gap: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        height: 70px;
+        padding: 0 10px;
+    }
+
+    nav img {
+        height: 45px;
+    }
+    
+    footer {
+        height: 35px;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    footer img {
+        height: 25px;
+        margin-top: 5px;
+    }
 }

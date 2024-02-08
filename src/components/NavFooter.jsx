@@ -7,7 +7,6 @@ const NavFooter = () => {
     <>
     <nav className="menu">
       <a href="/"><img src="src\assets\mappseum-logo.png"/></a>
-      <button>Agregar escultura</button>
     </nav>
     <Outlet/>
     <footer>
