@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F8FAE5;
+}
+.container-form {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 110vh;
+    padding: 5vh;
+    border: solid 2px #43766c;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #43766c;
+    background-image: linear-gradient(rgba(248, 250, 229, 0.5), rgba(248, 250, 229, 0.5)), url(src/assets/escultura-mujer.svg);
+        background-size: 22em; /* Asegura que la imagen cubra todo el contenedor */
+        background-position-y: 190px; /* Evita que la imagen se repita */
+        background-position-x: 130px;
+        background-repeat: no-repeat;
+
+}
+
+form button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    background-color: #43766c;
+    border: none;
+    width: 7em;
+    padding: 0.5em;
+    margin-top: 2em;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: center;
+}
+
+form button:hover {
+    background-color: #39705f;
+    box-shadow: 0 0 10px #43766c;
+}
+
+form h1 {
+    font-family: "Merriweather", sans-serif;
+    text-align: center;
+    color: #43766c;
+}
+
+form label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+}
+
+form input {
+    color: black;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #43766c;
+    margin-bottom: 1em;
+}
+
+::placeholder {
+    color: #a3a3a3c1;
+}
+
+/* .img-file {
+    border-bottom: none;
+    color: #43766c;
+} */
+
+@media (max-width: 768px) {
+    .container-form {
+        width: 70vw;
+        height: 100vh;
+        background-size: 15em; /* Asegura que la imagen cubra todo el contenedor */
+        background-position-y: 190px; /* Evita que la imagen se repita */
+        background-position-x: 35px;
+    }
+
+    form h1 {
+        font-size: 1.5rem;
+    }
+
+    form input {
+        font-size: 0.7rem;
+    }
+
+    form label {
+        font-size: 0.7rem;
+    }
+
+    form button {
+        font-size: 0.8rem;
+    }
+}
