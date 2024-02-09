@@ -25,7 +25,7 @@ const StyledBotonEliminar = styled(BotonEliminar)`
 const Card = () => {
   return (
     <StyledCard>
-      <img src="src\assets\margo.png" className="img-obra" alt="" />
+      <img src="src\assets\Cuadro.png" className="img-obra" alt="" />
       <h1 className="texto">Obra: David</h1>
       <h1 className="texto2">Autor: Miguel Angel</h1>
       <BotonEliminar />
