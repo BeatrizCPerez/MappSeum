@@ -15,10 +15,10 @@ const Form = () => {
     <input type="text" name="año" placeholder="Escribe el año de creación"/>
 
     <label>Material:</label>
-    <input type="text" name="material" placeholder="Escribe el tipo de material de tu escultura"/>
+    <input type="text" name="material" placeholder="Escribe el tipo de material"/>
 
     <label>Ubicación:</label>
-    <input type="text" name="ubicacion" placeholder="Escribe la ubicación de tu escultura"/>
+    <input type="text" name="ubicacion" placeholder="Escribe la ubicación"/>
 
     <label>Imagen de la Escultura:</label>
     {/* <input className="img-file" type="file" name="imagen" accept="image/*"/> */}

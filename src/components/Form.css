@@ -14,8 +14,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px #43766c;
     background-image: linear-gradient(rgba(248, 250, 229, 0.5), rgba(248, 250, 229, 0.5)), url(src/assets/escultura-mujer.svg);
-        background-size: 22em; /* Asegura que la imagen cubra todo el contenedor */
-        background-position-y: 190px; /* Evita que la imagen se repita */
+        background-size: 26em; /* Asegura que la imagen cubra todo el contenedor */
+        background-position-y: 90px; /* Evita que la imagen se repita */
         background-position-x: 130px;
         background-repeat: no-repeat;
 
@@ -49,7 +49,7 @@ form button:hover {
 
 form label {
     font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5em;
 }
 
@@ -59,11 +59,13 @@ form input {
     border: none;
     background: none;
     border-bottom: 2px solid #43766c;
-    margin-bottom: 1em;
+    margin-bottom: 4em;
 }
 
 ::placeholder {
     color: #a3a3a3c1;
+    font-size: 1rem;
+
 }
 
 /* .img-file {
@@ -73,11 +75,11 @@ form input {
 
 @media (max-width: 768px) {
     .container-form {
-        width: 70vw;
+        width: 78vw;
         height: 100vh;
-        background-size: 15em; /* Asegura que la imagen cubra todo el contenedor */
-        background-position-y: 190px; /* Evita que la imagen se repita */
-        background-position-x: 35px;
+        background-size: 20em; /* Asegura que la imagen cubra todo el contenedor */
+        background-position-y: 120px; /* Evita que la imagen se repita */
+        background-position-x: 20px;
     }
 
     form h1 {
@@ -86,10 +88,11 @@ form input {
 
     form input {
         font-size: 0.7rem;
+        padding-top: 1em;
     }
 
     form label {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 
     form button {
