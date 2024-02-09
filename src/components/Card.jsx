@@ -1,9 +1,8 @@
+// Card.js
 import React from "react";
 import styled from "styled-components";
-import BotonModificar from "./Boton";
-import BotonEliminar from "./Botoneliminar";
+import BotonEliminar from "./BotonEliminar";
 
-// Utilizar un nombre diferente para la constante que define el estilo
 const StyledCard = styled.div`
   margin-top: 3vw;
   border: 1px solid #B19470;
@@ -17,9 +16,38 @@ const StyledCard = styled.div`
   justify-content: right;
 `;
 
+const StyledBotonEliminar = styled(BotonEliminar)`
+  &:hover {
+    background-color: green;
+  }
+`;
 
 const Card = () => {
-  return <StyledCard><img src="src\assets\margo.png" class="img-obra" alt="" /><h1 className="texto">Obra: David</h1><h1 className="texto2">Autor: Miguel Angel</h1><BotonModificar/><BotonEliminar/></StyledCard>;
+  return (
+    <StyledCard>
+      <img src="src\assets\margo.png" className="img-obra" alt="" />
+      <h1 className="texto">Obra: David</h1>
+      <h1 className="texto2">Autor: Miguel Angel</h1>
+      <BotonEliminar />
+      <a href="/edit-sculpture">
+        <StyledBotonEliminar
+          style={{
+            backgroundColor: 'black',
+            color: 'white',
+            border: '2px solid white',
+            borderRadius: '20px',
+            padding: '10px 20px',
+            cursor: 'pointer',
+            fontSize: '16px',
+            width: '20%',
+            marginLeft: '50%',
+            marginTop: '3%',
+          }}
+          texto="Modificar"
+        />
+      </a>
+    </StyledCard>
+  );
 };
 
-export default Card; 
+export default Card;
