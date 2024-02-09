@@ -1,0 +1,63 @@
+body{
+    background-color: #F8FAE5;
+   }
+
+.container-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200vh; /* Ajusta la altura según tus necesidades */
+    margin-top: -2%;
+  }
+  
+h1{
+    font-size: 33px;
+    font-weight: bold;
+
+}
+
+.regular-titulo{
+    font-weight: lighter;
+    margin-bottom: -1%;
+}
+
+.primer-titulo{
+    margin-left: -25.5%;
+    margin-bottom: -4.5%;
+}
+
+
+.img-obra{
+    height: 30vw;
+    width: 25vw;
+}
+
+.texto, .texto2{
+    margin-top: -50%;
+    margin-left: 50%;
+}
+
+
+.texto2{
+    margin-top: -2%;
+}
+
+.logo-circular{
+    margin-left: 38%;
+    margin-bottom: -6%;
+    height: 8%;
+    width: 11%;
+}
+
+@media only screen 
+and (min-width: 375px) 
+and (max-width: 1000px) {
+    .texto, .texto2{
+        font-size: 10px;}
+    .container-center{
+        height: 165vw;
+
+        }
+    
+  }
