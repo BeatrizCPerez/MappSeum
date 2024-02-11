@@ -1,24 +1,18 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F8FAE5;
-}
 .container-form {
     display: flex;
     flex-direction: column;
-    width: 40vw;
-    height: 110vh;
+    width: min(78%, 600px);
     padding: 5vh;
     border: solid 2px #43766c;
     border-radius: 10px;
     box-shadow: 0 0 10px #43766c;
     background-image: linear-gradient(rgba(248, 250, 229, 0.5), rgba(248, 250, 229, 0.5)), url(src/assets/escultura-mujer.svg);
-        background-size: 26em; /* Asegura que la imagen cubra todo el contenedor */
-        background-position-y: 90px; /* Evita que la imagen se repita */
-        background-position-x: 130px;
-        background-repeat: no-repeat;
-
+    background-size: 26em;
+    /* Asegura que la imagen cubra todo el contenedor */
+    background-position-y: 90px;
+    /* Evita que la imagen se repita */
+    background-position-x: 130px;
+    background-repeat: no-repeat;
 }
 
 form button {
@@ -30,7 +24,6 @@ form button {
     border: none;
     width: 7em;
     padding: 0.5em;
-    margin-top: 2em;
     border-radius: 10px;
     cursor: pointer;
     align-self: center;
@@ -54,6 +47,7 @@ form label {
 }
 
 form input {
+    font-family: "Montserrat", sans-serif;
     color: black;
     outline: none;
     border: none;
@@ -75,10 +69,10 @@ form input {
 
 @media (max-width: 768px) {
     .container-form {
-        width: 78vw;
-        height: 100vh;
-        background-size: 20em; /* Asegura que la imagen cubra todo el contenedor */
-        background-position-y: 120px; /* Evita que la imagen se repita */
+        background-size: 20em;
+        /* Asegura que la imagen cubra todo el contenedor */
+        background-position-y: 120px;
+        /* Evita que la imagen se repita */
         background-position-x: 20px;
     }
 
