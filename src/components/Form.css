@@ -1,0 +1,95 @@
+.container-form {
+    display: flex;
+    flex-direction: column;
+    width: min(78%, 600px);
+    padding: 5vh;
+    border: solid 2px #43766c;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #43766c;
+    background-image: linear-gradient(rgba(248, 250, 229, 0.5), rgba(248, 250, 229, 0.5)), url(src/assets/escultura-mujer.svg);
+    background-size: 26em;
+    /* Asegura que la imagen cubra todo el contenedor */
+    background-position-y: 90px;
+    /* Evita que la imagen se repita */
+    background-position-x: 130px;
+    background-repeat: no-repeat;
+}
+
+form button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    background-color: #43766c;
+    border: none;
+    width: 7em;
+    padding: 0.5em;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: center;
+}
+
+form button:hover {
+    background-color: #39705f;
+    box-shadow: 0 0 10px #43766c;
+}
+
+.form-title {
+    font-family: "Merriweather", sans-serif;
+    text-align: center;
+    color: #43766c;
+}
+
+form label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+}
+
+form input {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #43766c;
+    margin-bottom: 4em;
+}
+
+::placeholder {
+    color: #a3a3a3c1;
+    font-size: 1rem;
+
+}
+
+/* .img-file {
+    border-bottom: none;
+    color: #43766c;
+} */
+
+@media (max-width: 768px) {
+    .container-form {
+        background-size: 20em;
+        /* Asegura que la imagen cubra todo el contenedor */
+        background-position-y: 120px;
+        /* Evita que la imagen se repita */
+        background-position-x: 20px;
+    }
+
+    form h1 {
+        font-size: 1.5rem;
+    }
+
+    form input {
+        font-size: 0.7rem;
+        padding-top: 1em;
+    }
+
+    form label {
+        font-size: 1rem;
+    }
+
+    form button {
+        font-size: 0.8rem;
+    }
+}

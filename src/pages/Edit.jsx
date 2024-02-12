@@ -1,8 +1,13 @@
 import React from 'react'
+import Form from '../components/Form'
+
 
 const Edit = () => {
   return (
-    <div>Formulario Editar</div>
+    <>
+      <h1 className="form-title">EDITAR OBRA</h1>
+      <Form />
+    </>
   )
 }
 

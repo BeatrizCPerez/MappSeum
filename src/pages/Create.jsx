@@ -1,8 +1,12 @@
 import React from 'react'
+import Form from '../components/Form'
 
 const Create = () => {
   return (
-    <div>Formulario Crear</div>
+    <>
+      <h1 className="form-title">AÑADE UNA NUEVA OBRA</h1>
+      <Form />
+    </>
   )
 }
 
