@@ -14,11 +14,75 @@ const StyledCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: right;
+  font-weight: 12px; 
+  position: relative;
+
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 100%;
+    height: 100%;
+    background: url('src/assets/Cuadro.png') center/contain no-repeat;
+    z-index: -1;
+    border-radius: 50px;
+    opacity: 0.8;
+    height: 108%;
+    width: 160%;
+    margin-left: -60%;
+    margin-top: -5%;
+
+    @media screen and (max-width: 768px) {
+      display: none; // Oculta la imagen de fondo en dispositivos móviles
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 90vw;
+    height: 50vw;
+  }
 `;
 
 const StyledBotonEliminar = styled(BotonEliminar)`
-  &:hover {
-    background-color: green;
+  margin-top: -30%;
+  margin-left: -20%;
+`;
+
+// ...
+
+const StyledBotonModificar = styled(StyledBotonEliminar)`
+  /* Estilos adicionales para el botón Modificar en responsive */
+  @media screen and (max-width: 768px) {
+    font-size: 8px;
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 10%; // Ajusta el margen izquierdo para mover el botón hacia la izquierda en dispositivos móviles
+  }
+`;
+
+
+const StyledCardMobile = styled(StyledCard)`
+  /* Estilos adicionales para pantallas más pequeñas */
+  @media screen and (max-width: 768px) {
+    .texto {
+      font-size: 8px;
+    }
+  }
+`;
+
+const StyledBotonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -8%;
+    margin-left: -22%
   }
 `;
 
@@ -26,29 +90,34 @@ const Card = ({ data }) => {
   const { id, imageUrl, title, author } = data;
 
   return (
-    <StyledCard key={id}>
-      <img src={imageUrl} className="img-obra" alt={title} />
-      <h1 className="texto">Obra: {title}</h1>
-      <h1 className="texto2">Autor: {author}</h1>
-      <BotonEliminar />
-      <a href="/edit-sculpture">
-        <StyledBotonEliminar
-          style={{
-            backgroundColor: 'black',
-            color: 'white',
-            border: '2px solid white',
-            borderRadius: '20px',
-            padding: '10px 20px',
-            cursor: 'pointer',
-            fontSize: '16px',
-            width: '20%',
-            marginLeft: '50%',
-            marginTop: '3%',
-          }}
-          texto="Modificar"
-        />
-      </a>
-    </StyledCard>
+    <StyledCardMobile key={id}>
+      <img
+        src={imageUrl}
+        className="img-obra"
+        alt={title}
+        style={{ height: '75%', width: '33%', marginLeft: '8%', marginTop: "8%", borderRadius: '5%' }}
+      />
+      <h1 className="texto" style={{ fontSize: '25px', marginBottom: '5%', padding: "2%" }}>Obra: {title}</h1>
+      <h1 className="texto2" style={{ fontSize: '20px', marginBottom: '1%', padding: "2%" }}>Autor: {author}</h1>
+      <StyledBotonContainer>
+        <BotonEliminar />
+        <a href="/edit-sculpture">
+          <StyledBotonModificar
+            style={{
+              backgroundColor: 'black',
+              color: 'white',
+              border: '2px solid white',
+              borderRadius: '20px',
+              padding: '10px 20px',
+              cursor: 'pointer',
+              marginTop: '2%',
+              marginLeft: '60%'
+            }}
+            texto="Modificar"
+          />
+        </a>
+      </StyledBotonContainer>
+    </StyledCardMobile>
   );
 };
 

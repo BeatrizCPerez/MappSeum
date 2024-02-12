@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Card from "../components/Card";
 import BotonAgregar from '../components/Boton-agregar';
 import axios from 'axios';

@@ -1,30 +1,26 @@
 .boton-eliminar {
-    background-color: #500707; /* Código de color para marrón */
-    color: white;
-    border: 2px solid white;
-        border-radius: 20px;
-        padding: 10px 20px;
-        cursor: pointer;
-        font-size: 16px;
-        width: 20%;
-        margin-left: 50% ;
-        margin-top: 3%;
-      
-  }
-  
-  .boton-eliminar:hover {
-    background-color: white;
-    color: #8B4513;
-    font-weight: bold;
-  }
-  
-  @media only screen 
-  and (min-width: 375px) 
-  and (max-width: 1000px) {
-    .boton-eliminar{
-        height: 30px;
-        width:80px;
-        font-size: 11px;
-
+  background-color: #500707;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 20%;
+  margin-left: 60%;
+  margin-top: 7%;
 }
+
+.boton-eliminar:hover {
+  background-color: white;
+  color: #8B4513;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 1000px) {
+  .boton-eliminar {
+    height: 30px;
+    width: 80px;
+    font-size: 11px;
   }
+}

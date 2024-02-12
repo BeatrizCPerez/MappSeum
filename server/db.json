@@ -17,17 +17,4 @@
         "material": "Mármol",
         "year": 1499,
         "location": "Ciudad del Vaticano"
-      },
-      {
-        "id": 3,        
-        "imageUrl": "https://es.wikipedia.org/wiki/David_(Miguel_%C3%81ngel)#/media/Archivo:Michelangelo's_David_-_right_view_2.jpg",
-        "title": "David", 
-        "author": "Miguel Ángel",
-        "material": "Mármol Blanco",
-        "year": 1504,
-        "location": "Galeria de la Academia, Florencia, Italia"
-      }
-      
-    ]
-  }
-  
+      }]}
