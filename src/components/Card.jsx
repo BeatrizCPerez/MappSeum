@@ -22,12 +22,14 @@ const StyledBotonEliminar = styled(BotonEliminar)`
   }
 `;
 
-const Card = () => {
+const Card = ({ data }) => {
+  const { id, imageUrl, title, author } = data;
+
   return (
-    <StyledCard>
-      <img src="src\assets\Cuadro.png" className="img-obra" alt="" />
-      <h1 className="texto">Obra: David</h1>
-      <h1 className="texto2">Autor: Miguel Angel</h1>
+    <StyledCard key={id}>
+      <img src={imageUrl} className="img-obra" alt={title} />
+      <h1 className="texto">Obra: {title}</h1>
+      <h1 className="texto2">Autor: {author}</h1>
       <BotonEliminar />
       <a href="/edit-sculpture">
         <StyledBotonEliminar
