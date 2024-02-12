@@ -13,11 +13,9 @@ const StyledCard = styled.div`
   width: 50vw;
   display: flex;
   flex-direction: column;
-  justify-content: right;
+  justify-content: space-between;
   font-weight: 12px; 
   position: relative;
-
-
 
   &::before {
     content: '';
@@ -36,7 +34,7 @@ const StyledCard = styled.div`
     margin-top: -5%;
 
     @media screen and (max-width: 768px) {
-      display: none; // Oculta la imagen de fondo en dispositivos móviles
+      display: none;
     }
   }
 
@@ -47,25 +45,20 @@ const StyledCard = styled.div`
 `;
 
 const StyledBotonEliminar = styled(BotonEliminar)`
-  margin-top: -30%;
-  margin-left: -20%;
+  margin-top: 2%;
+  align-self: center;
+  margin-bottom: 10%
 `;
 
-// ...
-
 const StyledBotonModificar = styled(StyledBotonEliminar)`
-  /* Estilos adicionales para el botón Modificar en responsive */
   @media screen and (max-width: 768px) {
     font-size: 8px;
     width: 100%;
-    margin-top: 2%;
-    margin-left: 10%; // Ajusta el margen izquierdo para mover el botón hacia la izquierda en dispositivos móviles
+    margin-left: 0;
   }
 `;
 
-
 const StyledCardMobile = styled(StyledCard)`
-  /* Estilos adicionales para pantallas más pequeñas */
   @media screen and (max-width: 768px) {
     .texto {
       font-size: 8px;
@@ -76,13 +69,14 @@ const StyledCardMobile = styled(StyledCard)`
 const StyledBotonContainer = styled.div`
   display: flex;
   flex-direction: column;
+  margin-top: -20%;
 
   @media screen and (max-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: -8%;
-    margin-left: -22%
+    margin-top: -9%;
+    margin-left: -22%;
   }
 `;
 
@@ -97,8 +91,8 @@ const Card = ({ data }) => {
         alt={title}
         style={{ height: '75%', width: '33%', marginLeft: '8%', marginTop: "8%", borderRadius: '5%' }}
       />
-      <h1 className="texto" style={{ fontSize: '25px', marginBottom: '5%', padding: "2%" }}>Obra: {title}</h1>
-      <h1 className="texto2" style={{ fontSize: '20px', marginBottom: '1%', padding: "2%" }}>Autor: {author}</h1>
+      <h1 className="texto" style={{ fontSize: '25px', marginBottom: '5%', marginTop: '-65%' }}>Obra: {title}</h1>
+      <h1 className="texto2" style={{ fontSize: '20px', marginBottom: '1%', marginTop: '-20%'}}>Autor: {author}</h1>
       <StyledBotonContainer>
         <BotonEliminar />
         <a href="/edit-sculpture">
@@ -110,8 +104,7 @@ const Card = ({ data }) => {
               borderRadius: '20px',
               padding: '10px 20px',
               cursor: 'pointer',
-              marginTop: '2%',
-              marginLeft: '60%'
+    
             }}
             texto="Modificar"
           />

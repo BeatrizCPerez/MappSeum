@@ -8,7 +8,6 @@
   font-size: 16px;
   width: 20%;
   margin-left: 60%;
-  margin-top: 7%;
 }
 
 .boton-eliminar:hover {
@@ -22,5 +21,6 @@
     height: 30px;
     width: 80px;
     font-size: 11px;
+    margin-top: -2%;
   }
 }
