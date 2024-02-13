@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import Create from "../pages/Create";
 import Edit from "../pages/Edit";
 import NavFooter from "../components/NavFooter";
+import { getSculptures } from "../services/sculptures-services";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+        loader: getSculptures
       },
       {
         path: "/add-sculpture",

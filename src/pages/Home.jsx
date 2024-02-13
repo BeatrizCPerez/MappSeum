@@ -1,12 +1,16 @@
-import { useState, useEffect } from 'react';
+/* import { useState, useEffect } from 'react'; */
 import Card from "../components/Card";
 import BotonAgregar from '../components/Boton-agregar';
-import axios from 'axios';
+/* import axios from 'axios'; */
+import { useLoaderData } from 'react-router-dom';
 
 
 
 const Home = () => {
-  const [sculptures, setSculptures] = useState([]);
+
+  const sculptures = useLoaderData();
+
+  /* const [sculptures, setSculptures] = useState([]);
 
   useEffect(() => {
     // Función para realizar la petición a la API
@@ -23,7 +27,7 @@ const Home = () => {
     // Llamada a la función para realizar la petición cuando el componente se monta
     fetchData();
   }, []); // El segundo argumento del useEffect ([]) indica que la llamada solo se realiza una vez al montar el componente
-
+ */
 
   return (
     <div className="container-center">
