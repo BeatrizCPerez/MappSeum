@@ -7,6 +7,12 @@ export const getSculptures = async () => {
 }
 
 // DELETE
+export const deleteSculptures = async (id) => {
+    const response = await fetch(`http://localhost:3000/sculptures/${id}`, {
+        method: 'DELETE'
+    });
+    return response;
+};
 
 // POST
 

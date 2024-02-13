@@ -2,6 +2,7 @@
 import React from "react";
 import styled from "styled-components";
 import BotonEliminar from "./BotonEliminar";
+import { deleteSculptures } from "../services/sculptures-services";
 
 const StyledCard = styled.div`
   margin-top: 3vw;
@@ -94,7 +95,7 @@ const Card = ({ data }) => {
       <h1 className="texto" style={{ fontSize: '25px', marginBottom: '5%', marginTop: '-65%' }}>Obra: {title}</h1>
       <h1 className="texto2" style={{ fontSize: '20px', marginBottom: '1%', marginTop: '-20%'}}>Autor: {author}</h1>
       <StyledBotonContainer>
-        <BotonEliminar />
+        <BotonEliminar onClick={() => deleteSculptures(id)}/> 
         <a href="/edit-sculpture">
           <StyledBotonModificar
             style={{
