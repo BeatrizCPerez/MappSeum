@@ -26,7 +26,7 @@ return (
         <input {...register("location")} type="text" placeholder="Escribe la ubicación" />
 
         <label>Imagen de la Escultura:</label>
-        <input {...register("imageUrl")} placeholder="Escribe el link de tu imagen" type="link" name="imagen" accept="image/*" />
+        <input {...register("imageUrl")} placeholder="Escribe el link de tu imagen" type="link"/>
         {/* <input className="img-file" type="file" name="imagen" accept="image/*"/> */}
 
         <button type="submit">Guardar</button>

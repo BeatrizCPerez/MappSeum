@@ -26,6 +26,15 @@
       "material": "Mármol Blanco",
       "year": 1504,
       "location": "Galeria de la Academia, Florencia, Italia"
+    },
+    {
+      "id": "0338",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/Estatua_de_Maria_Lionza_en_Caracas.jpg",
+      "title": "Maria Lionza",
+      "author": "Leite",
+      "material": "madera",
+      "year": "1895",
+      "location": "Caracas, Venezuela"
     }
   ]
 }
