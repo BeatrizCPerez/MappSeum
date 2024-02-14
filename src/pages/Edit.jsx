@@ -1,12 +1,12 @@
 import React from 'react'
-import Form from '../components/Form'
+import FormEdit from '../components/FormEdit'
 
 
 const Edit = () => {
   return (
     <>
       <h1 className="form-title">EDITAR OBRA</h1>
-      <Form />
+      <FormEdit />
     </>
   )
 }
