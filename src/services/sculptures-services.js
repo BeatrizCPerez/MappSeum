@@ -1,5 +1,4 @@
 // GET
-
 export const getSculptures = async () => {
     const response = await fetch('http://localhost:3000/sculptures');
     const data = await response.json();
@@ -16,7 +15,35 @@ export const deleteSculptures = async (id) => {
 };
 
 // POST
+export const createSculptures = async (newSculptures) => {
+    alert("Creando Obra" + newSculptures.imageUrl )
+    const response = await fetch('http://localhost:3000/sculptures', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: `{ 
+        "imageUrl": "${newSculptures.imageUrl}",
+        "title": "${newSculptures.title}", 
+        "author": "${newSculptures.author}",
+        "material": "${newSculptures.material}",
+        "year": "${newSculptures.year}",
+        "location": "${newSculptures.location}"
+    }`});
+    return response;
+}
 
 
 // PUT
+
+export const putSculptures = async (id, data) => {
+    const response = await fetch(`http://localhost:3000/sculptures/${id}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    });
+    return response;
+}
 

@@ -1,31 +1,31 @@
 {
-    "sculptures": [
-      {
-        "id": 1,        
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/El_oso_y_el_madroño_-_02.jpg",
-        "title": "El oso y el madroño", 
-        "author": "Antonio Navarro Santafé",
-        "material": "Piedra y bronce",
-        "year": 1967,
-        "location": "Madrid, España"
-      },
-      {
-        "id": 2,        
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Michelangelo's_Pieta_5450_cropncleaned.jpg",
-        "title": "La Piedad del Vaticano", 
-        "author": "Miguel Ángel",
-        "material": "Mármol",
-        "year": 1499,
-        "location": "Ciudad del Vaticano"
-      },
-      {
-        "id": 3,        
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Michelangelo%27s_David_-_right_view_2.jpg",
-        "title": "David", 
-        "author": "Miguel Ángel",
-        "material": "Mármol Blanco",
-        "year": 1504,
-        "location": "Galeria de la Academia, Florencia, Italia"
-      }
-    ]
-  }
+  "sculptures": [
+    {
+      "id": "1",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/El_oso_y_el_madroño_-_02.jpg",
+      "title": "El oso y el madroño",
+      "author": "Antonio Navarro Santafé",
+      "material": "Piedra y bronce",
+      "year": 1967,
+      "location": "Madrid, España"
+    },
+    {
+      "id": "2",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Michelangelo's_Pieta_5450_cropncleaned.jpg",
+      "title": "La Piedad del Vaticano",
+      "author": "Miguel Ángel",
+      "material": "Mármol",
+      "year": 1499,
+      "location": "Ciudad del Vaticano"
+    },
+    {
+      "id": "3",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Michelangelo%27s_David_-_right_view_2.jpg/270px-Michelangelo%27s_David_-_right_view_2.jpg",
+      "title": "David",
+      "author": "Miguel Ángel",
+      "material": "Mármol Blanco",
+      "year": 1504,
+      "location": "Galeria de la Academia, Florencia, Italia"
+    }
+  ]
+}
