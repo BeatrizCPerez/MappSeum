@@ -16,7 +16,7 @@ export const deleteSculptures = async (id) => {
 
 // POST
 export const createSculptures = async (newSculptures) => {
-    alert("Creando Obra" + newSculptures.imageUrl )
+    alert("Obra creada con éxito!")
     const response = await fetch('http://localhost:3000/sculptures', {
         method: 'POST',
         headers: {
