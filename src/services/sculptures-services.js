@@ -22,6 +22,7 @@ export const createSculptures = async (newSculptures) => {
         headers: {
             'Content-Type': 'application/json'
         },
+        // body: JSON.stringify(newSculptures)}); se puede hacer de las dos formas 
         body: `{ 
         "imageUrl": "${newSculptures.imageUrl}",
         "title": "${newSculptures.title}", 

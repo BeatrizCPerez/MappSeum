@@ -35,6 +35,15 @@
       "material": "madera",
       "year": "1895",
       "location": "Caracas, Venezuela"
+    },
+    {
+      "id": "1490",
+      "title": "Spiderman",
+      "author": "Mary Jane",
+      "year": "1870",
+      "material": "Hormigon",
+      "location": "EEUU",
+      "imageUrl": "https://i.etsystatic.com/48633458/r/il/f4464d/5642514482/il_794xN.5642514482_j1le.jpg"
     }
   ]
 }
