@@ -26,24 +26,6 @@
       "material": "Mármol Blanco",
       "year": 1504,
       "location": "Galeria de la Academia, Florencia, Italia"
-    },
-    {
-      "id": "0338",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/Estatua_de_Maria_Lionza_en_Caracas.jpg",
-      "title": "Maria Lionza",
-      "author": "Leite",
-      "material": "madera",
-      "year": "1895",
-      "location": "Caracas, Venezuela"
-    },
-    {
-      "id": "1490",
-      "title": "Spiderman",
-      "author": "Mary Jane",
-      "year": "1870",
-      "material": "Hormigon",
-      "location": "EEUU",
-      "imageUrl": "https://i.etsystatic.com/48633458/r/il/f4464d/5642514482/il_794xN.5642514482_j1le.jpg"
     }
   ]
 }
