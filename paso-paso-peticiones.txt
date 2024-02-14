@@ -1,0 +1,55 @@
+1. Crear una carpeta dentro de SRC llamda services.
+
+2. Crear un archivo sculptures-services.js 
+
+3. Dentro del archivo crear nuestras funciones / peticiones:
+- Metodo GET 
+- Metodo POST 
+- Metodo PUT
+- Metodo DELETE
+
+4. Nuestras peticiones: Metodo GET 
+
+export const getSculptures = async() => {
+    const response = await fetch('http://localhost:3000/sculptures');
+    const data = await response.json();
+    return data;
+}
+
+* Luego de hacer la funcion en ese archivo, nos movemos al router.jsx 
+
+6. Se agrega el loader: getSculptures y tambien se importa sino se ha importado automatico 
+* Luego que tengamos esto, nos vamos a la pagina donde quieras mostrar esto, en nuestro caso seria: Home.jsx
+
+7. importar el hook useLoaderData en la pagina y
+luego llamar al hook en la constante: 
+
+const Home = () => {
+    const sculptures = useLoaderData();
+}
+
+-----------------------------------------
+- Metodo DELETE: 
+1. Una vez en nuestro archivo de services.js creamos esta nueva peticion: 
+
+// DELETE
+export const deleteSculptures = async (id) => {
+    if (confirm("¿Estás seguro que quieres eliminar?") === true) {
+        const response = await fetch(`http://localhost:3000/sculptures/${id}`, {
+            method: 'DELETE'
+        });
+    }
+};
+
+* dentro del componente Card.jsx colocar dentro del boton eliminar:
+<BotonEliminar onClick={() => deleteSculptures(id)}/>
+
+EXPLICACION: deleteSculptures 
+
+onClick={() => deleteSculptures(id)}
+
+Este código está utilizando una función de flecha para asegurarse de que la función deleteSculptures se llame con el argumento id cuando se haga clic en el elemento.
+
+Si simplemente escribieras onClick={deleteSculptures(id)}, la función deleteSculptures se ejecutaría inmediatamente cuando se renderiza el componente, no cuando se hace clic en el elemento.
+
+Al envolver deleteSculptures(id) en una función de flecha, estás creando una nueva función que, cuando se llama (en este caso, cuando se hace clic en el elemento), llamará a deleteSculptures(id). Esto es útil cuando necesitas pasar argumentos a tu manejador de eventos. En este caso, el argumento es id.
