@@ -62,6 +62,12 @@ form input {
 
 }
 
+.text-error{
+    color: red;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 1em;
+}
+
 /* .img-file {
     border-bottom: none;
     color: #43766c;

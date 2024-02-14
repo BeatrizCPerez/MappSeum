@@ -26,6 +26,15 @@
       "material": "Mármol Blanco",
       "year": 1504,
       "location": "Galeria de la Academia, Florencia, Italia"
+    },
+    {
+      "id": "9d15",
+      "imageUrl": "https://es.wikipedia.org/wiki/Luperca#/media/Archivo:Capitoline_she-wolf_Musei_Capitolini_MC1181.jpg",
+      "title": "Luperca",
+      "author": "Desconocido",
+      "material": "Bronce",
+      "year": "1471",
+      "location": "Museo del capitolio Romano, Italia,"
     }
   ]
 }
