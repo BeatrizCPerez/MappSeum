@@ -2,6 +2,7 @@ import React from 'react'
 import './Form.css'
 import { createSculptures } from '../services/sculptures-services'
 import { useForm } from 'react-hook-form'
+import { Navigate } from 'react-router-dom'
 
 const Form = () => {
   const { register, handleSubmit, formState: {errors} } = useForm()
@@ -23,6 +24,12 @@ const Form = () => {
     }
     return true;
   };
+
+  const [goToHome, setGoToHome] = React.useState(false);
+
+  if (goToHome) {
+    return <Navigate to="/" />
+  }
 
 return (
   <>
