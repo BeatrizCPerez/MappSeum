@@ -96,7 +96,7 @@ const Card = ({ data }) => {
       />
       <h1 className="texto" style={{ fontSize: '22px', marginBottom: '25%', marginTop: '-50%', textDecoration: 'underline'}}>Obra: {title}</h1>
       <h1 className="texto2" style={{ fontSize: '20px', marginBottom: '27%', marginTop: '-23%', fontWeight: '400'}}>AUTOR: {author}</h1>
-      <h1  style={{ fontSize: '20px', marginBottom: '27%', marginTop: '-25%', marginLeft: '50%', fontWeight: '400'}}>Year: {year}</h1>
+      <h1  style={{ fontSize: '20px', marginBottom: '27%', marginTop: '-25%', marginLeft: '50%', fontWeight: '400'}}>Año: {year}</h1>
       <h1  style={{ fontSize: '20px', marginBottom: '27%', marginTop: '-25%', marginLeft: '50%', fontWeight: '400'}}>Material: {material}</h1>
       <h1  style={{ fontSize: '20px', marginBottom: '27%', marginTop: '-25%', marginLeft: '50%', fontWeight: '400'}}>Localización: {location}</h1>
       <StyledBotonContainer>
