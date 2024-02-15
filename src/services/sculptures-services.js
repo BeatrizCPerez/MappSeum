@@ -37,8 +37,16 @@ export const createSculptures = async (newSculptures) => {
 
 // PUT - EN PROCESO 
 
-export const putSculptures = async (id, data) => {
-    const response = await fetch(`http://localhost:3000/sculptures/${id}`, {
+export const editSculptures = async () => {
+    const data = {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Michelangelo%27s_David_-_right_view_2.jpg/270px-Michelangelo%27s_David_-_right_view_2.jpg",
+        "title": "leite",
+        "author": "olivia maria",
+        "material": "Madera y ladrillo",
+        "year": 1520,
+        "location": "venezuela, madrid"
+    }
+    const response = await fetch(`http://localhost:3000/sculptures/3`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
