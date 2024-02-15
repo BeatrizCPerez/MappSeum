@@ -16,7 +16,7 @@ const Form = () => {
   };
 
   const validateNumber = (value) => {
-    // Regular expression to validate if value contains only numbers
+    // Expresion regular que indica que solo devuelva numeros
     const numberRegex = /^[0-9]+$/;
     if (!numberRegex.test(value)) {
       return "Escribe solo números";
