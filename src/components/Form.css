@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: min(78%, 600px);
-    padding: 5vh;
+    padding: 35px;
     border: solid 2px #43766c;
     border-radius: 10px;
     box-shadow: 0 0 10px #43766c;
@@ -13,6 +13,14 @@
     /* Evita que la imagen se repita */
     background-position-x: 130px;
     background-repeat: no-repeat;
+    gap: 30px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
 }
 
 form button {
@@ -40,12 +48,6 @@ form button:hover {
     color: #43766c;
 }
 
-form label {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.2rem;
-    margin-bottom: 0.5em;
-}
-
 form input {
     font-family: "Montserrat", sans-serif;
     color: black;
@@ -53,7 +55,6 @@ form input {
     border: none;
     background: none;
     border-bottom: 2px solid #43766c;
-    margin-bottom: 4em;
 }
 
 ::placeholder {
@@ -65,7 +66,7 @@ form input {
 .text-error{
     color: red;
     font-family: "Montserrat", sans-serif;
-    margin-bottom: 1em;
+    font-size: 0.8rem;
 }
 
 /* .img-file {

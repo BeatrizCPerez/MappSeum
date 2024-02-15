@@ -32,9 +32,9 @@ const Home = () => {
   return (
     <div className="container-center">
       <img className="logo-circular" src="src\assets\Logo-circular.png" alt="../" />
-      <h1 className="primer-titulo">Esculturas</h1>
-      <h1 className="regular-titulo">que Inspiran</h1>
-      <h1>Explorando la Belleza </h1>
+      <h2 className="primer-titulo">Esculturas</h2>
+      <h2 className="regular-titulo">que Inspiran</h2>
+      <h2>Explorando la Belleza </h2>
       <a href="/add-sculpture"><button className="boton-agregar">Agregar Escultura</button></a>
       
       {/* Renderizar las tarjetas con los datos de la API */}
