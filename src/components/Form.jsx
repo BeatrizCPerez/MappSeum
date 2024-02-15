@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form'
 import { Navigate } from 'react-router-dom'
 
 const Form = () => {
-  const { register, handleSubmit, formState: {errors} } = useForm()
+  const { register, handleSubmit, reset, formState: {errors} } = useForm()
 
   const validateLink = (value) => {
     // Expresion regular que valida links
@@ -34,7 +34,7 @@ const Form = () => {
 return (
   <>
   
-      <form onSubmit = {handleSubmit(newSculpture => createSculptures(newSculpture))} className="container-form">
+      <form onSubmit = {handleSubmit(newSculpture => {createSculptures(newSculpture); reset()})} className="container-form">
         <label>Obra:</label>
         <input {...register("title", {required: "El campo obra esta vacio"})} type="text" placeholder='Escribe el nombre de la obra' />
         {errors.title && <div className="text-error">{errors.title.message}</div>}
