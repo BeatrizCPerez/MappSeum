@@ -18,6 +18,7 @@ const StyledCard = styled.div`
   font-weight: 12px; 
   position: relative;
 
+
   &::before {
     content: '';
     position: absolute;
@@ -82,7 +83,7 @@ const StyledBotonContainer = styled.div`
 `;
 
 const Card = ({ data }) => {
-  const { id, imageUrl, title, author } = data;
+  const { id, imageUrl, title, author,material, year, location } = data;
 
   return (
     <StyledCardMobile key={id}>
@@ -92,8 +93,11 @@ const Card = ({ data }) => {
         alt={title}
         style={{ height: '75%', width: '33%', marginLeft: '8%', marginTop: "8%", borderRadius: '5%' }}
       />
-      <h1 className="texto" style={{ fontSize: '25px', marginBottom: '5%', marginTop: '-65%' }}>Obra: {title}</h1>
-      <h1 className="texto2" style={{ fontSize: '20px', marginBottom: '1%', marginTop: '-20%'}}>Autor: {author}</h1>
+      <h1 className="texto" style={{ fontSize: '25px', marginBottom: '15%', marginTop: '-60%' }}>Obra: {title}</h1>
+      <h1 className="texto2" style={{ fontSize: '20px', marginBottom: '15%', marginTop: '-25%'}}>Autor: {author}</h1>
+      <h1  style={{ fontSize: '20px', marginBottom: '15%', marginTop: '-25%', marginLeft: '50%'}}>Year: {year}</h1>
+      <h1  style={{ fontSize: '20px', marginBottom: '15%', marginTop: '-25%', marginLeft: '50%'}}>Material: {material}</h1>
+      <h1  style={{ fontSize: '20px', marginBottom: '15%', marginTop: '-25%', marginLeft: '50%'}}>Localización: {location}</h1>
       <StyledBotonContainer>
         <BotonEliminar onClick={() => deleteSculptures(id)}/> 
         <a href="/edit-sculpture">
