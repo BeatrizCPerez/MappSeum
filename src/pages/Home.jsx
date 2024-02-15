@@ -1,6 +1,6 @@
 /* import { useState, useEffect } from 'react'; */
 import Card from "../components/Card";
-import BotonAgregar from '../components/Boton-agregar';
+/* import BotonAgregar from '../components/Boton-agregar'; */
 /* import axios from 'axios'; */
 import { useLoaderData } from 'react-router-dom';
 
@@ -35,7 +35,7 @@ const Home = () => {
       <h1 className="primer-titulo">Esculturas</h1>
       <h1 className="regular-titulo">que Inspiran</h1>
       <h1>Explorando la Belleza </h1>
-      <BotonAgregar />
+      <a href="/add-sculpture"><button className="boton-agregar">Agregar Escultura</button></a>
       
       {/* Renderizar las tarjetas con los datos de la API */}
       {sculptures.map((sculpture) => (
