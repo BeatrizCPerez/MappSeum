@@ -5,6 +5,7 @@ import BotonEliminar from "./BotonEliminar";
 import { deleteSculptures } from "../services/sculptures-services";
 
 const StyledCard = styled.div`
+ font-family: Montserrat, sans-serif;
   margin-top: 3vw;
   border: 1px solid #B19470;
   border-radius: 5px;
@@ -15,8 +16,9 @@ const StyledCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-weight: 12px; 
+  font-weight: 10px; 
   position: relative;
+
 
   &::before {
     content: '';
@@ -82,7 +84,7 @@ const StyledBotonContainer = styled.div`
 `;
 
 const Card = ({ data }) => {
-  const { id, imageUrl, title, author } = data;
+  const { id, imageUrl, title, author,material, year, location } = data;
 
   return (
     <StyledCardMobile key={id}>
@@ -92,8 +94,11 @@ const Card = ({ data }) => {
         alt={title}
         style={{ height: '75%', width: '33%', marginLeft: '8%', marginTop: "8%", borderRadius: '5%' }}
       />
-      <h1 className="texto" style={{ fontSize: '25px', marginBottom: '5%', marginTop: '-65%' }}>Obra: {title}</h1>
-      <h1 className="texto2" style={{ fontSize: '20px', marginBottom: '1%', marginTop: '-20%'}}>Autor: {author}</h1>
+      <h1 className="texto" style={{ fontSize: '22px', marginBottom: '25%', marginTop: '-50%', textDecoration: 'underline'}}>Obra: {title}</h1>
+      <h1 className="texto2" style={{ fontSize: '20px', marginBottom: '27%', marginTop: '-23%', fontWeight: '400'}}>AUTOR: {author}</h1>
+      <h1  style={{ fontSize: '20px', marginBottom: '27%', marginTop: '-25%', marginLeft: '50%', fontWeight: '400'}}>Year: {year}</h1>
+      <h1  style={{ fontSize: '20px', marginBottom: '27%', marginTop: '-25%', marginLeft: '50%', fontWeight: '400'}}>Material: {material}</h1>
+      <h1  style={{ fontSize: '20px', marginBottom: '27%', marginTop: '-25%', marginLeft: '50%', fontWeight: '400'}}>Localización: {location}</h1>
       <StyledBotonContainer>
         <BotonEliminar onClick={() => deleteSculptures(id)}/> 
         <a href="/edit-sculpture">
