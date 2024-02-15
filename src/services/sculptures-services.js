@@ -35,7 +35,7 @@ export const createSculptures = async (newSculptures) => {
 }
 
 
-// PUT
+// PUT - EN PROCESO 
 
 export const putSculptures = async (id, data) => {
     const response = await fetch(`http://localhost:3000/sculptures/${id}`, {
