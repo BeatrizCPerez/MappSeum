@@ -3,6 +3,7 @@ import './Form.css'
 import { createSculptures } from '../services/sculptures-services'
 import { useForm } from 'react-hook-form'
 import { Navigate } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const Form = () => {
   const { register, handleSubmit, reset, formState: {errors} } = useForm()
@@ -12,6 +13,7 @@ const Form = () => {
   if (goToHome) {
     return <Navigate to="/" />
   }
+
 
 return (
   <>
@@ -24,7 +26,8 @@ return (
         </label>
 
         <label>Autor:
-        <input {...register("author", {required: true})} type="text" placeholder="Escribe el nombre de Autor" />
+        <input {...register("author", {required: "campo requerido"})} type="text" placeholder="Escribe el nombre de Autor" />
+        {errors.year && <div className="text-error">{errors.year.message}</div>}
         </label>
 
         <label>Año:
@@ -33,11 +36,13 @@ return (
         </label>
 
         <label>Material:
-        <input {...register("material")} type="text" placeholder="Escribe el tipo de material" />
+        <input {...register("material", {required: "campo requerido"})} type="text" placeholder="Escribe el tipo de material" />
+        {errors.year && <div className="text-error">{errors.year.message}</div>}
         </label>
 
         <label>Ubicación:
-        <input {...register("location")} type="text" placeholder="Escribe la ubicación" />
+        <input {...register("location", {required: "campo requerido"})} type="text" placeholder="Escribe la ubicación" />
+        {errors.year && <div className="text-error">{errors.year.message}</div>}
         </label>
 
         <label>Imagen de la Escultura:
@@ -46,7 +51,12 @@ return (
         {/* <input className="img-file" type="file" name="imagen" accept="image/*"/> */}
         </label>
 
-        <button type="submit">Guardar</button>
+        <div className="buttons-container">
+          <button type="submit">Guardar</button>
+          <Link to="/">
+          <button type="submit">Cancelar</button>
+          </Link>
+        </div>
 
       </form>
     </>

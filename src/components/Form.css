@@ -23,6 +23,12 @@ form label {
     font-size: 1.2rem;
 }
 
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
 form button {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
