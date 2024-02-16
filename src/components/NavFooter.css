@@ -1,3 +1,13 @@
+.body-center {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-family: Montserrat, sans-serif;
+}
+
 header, footer {
     background-color: #B19470;
     width: 100%;
