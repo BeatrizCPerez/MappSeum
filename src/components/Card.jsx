@@ -1,8 +1,16 @@
 // Card.js
 import React from "react";
 import styled from "styled-components";
-import BotonEliminar from "./BotonEliminar";
 import { deleteSculptures } from "../services/sculptures-services";
+import { Link } from "react-router-dom";
+
+const Button = ({ onClick, text, variant }) => {
+  return (
+    <button className={`button`} onClick={onClick} style={{backgroundColor: variant === "delete" ? '#500707': 'black'}}>
+      {variant === "delete" ? "Eliminar" : variant === "modify" ? "Modificar" : text}
+    </button>
+  );
+}
 
 const StyledCard = styled.div`
  font-family: Montserrat, sans-serif;
@@ -47,20 +55,6 @@ const StyledCard = styled.div`
   }
 `;
 
-const StyledBotonEliminar = styled(BotonEliminar)`
-  margin-top: 2%;
-  align-self: center;
-  margin-bottom: 10%
-`;
-
-const StyledBotonModificar = styled(StyledBotonEliminar)`
-  @media screen and (max-width: 768px) {
-    font-size: 8px;
-    width: 100%;
-    margin-left: 0;
-  }
-`;
-
 const StyledCardMobile = styled(StyledCard)`
   @media screen and (max-width: 768px) {
     .texto {
@@ -100,21 +94,10 @@ const Card = ({ data }) => {
       <h2  style={{ fontSize: '20px', marginBottom: '27%', marginTop: '-25%', marginLeft: '50%', fontWeight: '400'}}>Material: {material}</h2>
       <h2  style={{ fontSize: '20px', marginBottom: '27%', marginTop: '-25%', marginLeft: '50%', fontWeight: '400'}}>Localización: {location}</h2>
       <StyledBotonContainer>
-        <BotonEliminar onClick={() => deleteSculptures(id)}/> 
-        <a href="/edit-sculpture">
-          <StyledBotonModificar
-            style={{
-              backgroundColor: 'black',
-              color: 'white',
-              border: '2px solid white',
-              borderRadius: '20px',
-              padding: '10px 20px',
-              cursor: 'pointer',
-    
-            }}
-            texto="Modificar"
-          />
-        </a>
+        <Button variant="delete" onClick={() => deleteSculptures(id)}/> 
+        <Link to="/edit-sculpture">
+          <Button variant="modify"/>
+        </Link>
       </StyledBotonContainer>
     </StyledCardMobile>
   );
