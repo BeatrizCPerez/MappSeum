@@ -5,9 +5,9 @@ import { Outlet } from 'react-router-dom'
 const NavFooter = () => {
   return (
     <div className="body-center">
-      <header>
+      <nav>
         <a href="/"><img src="src\assets\mappseum-logo.png" /></a>
-      </header>
+      </nav>
       <Outlet />
       <footer>
         <p>© 2024 MappSeum</p>

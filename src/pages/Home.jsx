@@ -1,7 +1,6 @@
 /* import { useState, useEffect } from 'react'; */
 /* import axios from 'axios'; */
 import { Link, useLoaderData } from 'react-router-dom';
-import "./Home.css"
 import Card from "../components/Card";
 
 const Home = () => {
@@ -30,15 +29,16 @@ const Home = () => {
   return (
     <div className="container-center">
       <img className="logo-circular" src="src\assets\Logo-circular.png" alt="../" />
-      <h2 className="primer-titulo">Esculturas</h2>
-      <h2 className="regular-titulo">que Inspiran</h2>
-      <h2>Explorando la Belleza </h2>
-      <Link to="/add-sculpture"><button className="boton-agregar">Agregar Escultura</button></Link>
-      
-      {/* Renderizar las tarjetas con los datos de la API */}
-      {sculptures.map((sculpture) => (
-        <Card key={sculpture.id} data={sculpture} />
-      ))}
+      <h2 style={{display: "flex", flexDirection: "column", gap: "10px", margin: "20px"}}>Esculturas
+      <span style={{fontWeight: "lighter", textAlign: "center"}}>que Inspiran</span>
+      Explorando la Belleza </h2>
+      <Link to="/add-sculpture"><button className="button" style={{backgroundColor: "#43766C", marginBottom: "20px"}}>Agregar Escultura</button></Link>
+      <div style={{display: "flex", flexWrap: "wrap", justifyContent: "center"}}>
+        {/* Renderizar las tarjetas con los datos de la API */}
+        {sculptures.map((sculpture) => (
+          <Card key={sculpture.id} data={sculpture} />
+        ))}
+      </div>
     </div>
   );
 };

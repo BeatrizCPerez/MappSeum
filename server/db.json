@@ -21,29 +21,11 @@
     {
       "id": "3",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Michelangelo%27s_David_-_right_view_2.jpg/270px-Michelangelo%27s_David_-_right_view_2.jpg",
-      "title": "David",
+      "title": "El David",
       "author": "Miguel Ángel",
       "material": "Mármol Blanco",
       "year": 1504,
       "location": "Galeria de la Academia, Florencia, Italia"
-    },
-    {
-      "id": "1767",
-      "imageUrl": "https://react-hook-form.com/docs/useform/reset",
-      "title": "dgd",
-      "author": "dgd",
-      "material": "dgdg",
-      "year": "55",
-      "location": "dgdg"
-    },
-    {
-      "id": "2cb1",
-      "imageUrl": "https://react-hook-form.com/docs/useform/reset",
-      "title": "zfsf",
-      "author": "sfsf",
-      "material": "fdgd",
-      "year": "66",
-      "location": "gfdg"
     }
   ]
 }
