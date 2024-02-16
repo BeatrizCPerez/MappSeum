@@ -43,7 +43,7 @@ return (
         <input {...register("author", {required: true})} type="text" placeholder="Escribe el nombre de Autor" />
 
         <label>Año:</label>
-        <input {...register("year", {validate: validateNumber})} type="text" placeholder="Escribe el año de creación" />
+        <input {...register("year", {required:"campo requerido", pattern: {value:/^[0-9]+$/, message:"Sólo es válido formato númerico"}})} type="text" placeholder="Escribe el año de creación" />
         {errors.year && <div className="text-error">{errors.year.message}</div>}
 
         <label>Material:</label>
