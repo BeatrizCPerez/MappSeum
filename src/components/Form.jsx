@@ -3,6 +3,7 @@ import './Form.css'
 import { createSculptures } from '../services/sculptures-services'
 import { useForm } from 'react-hook-form'
 import { Navigate } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const Form = () => {
   const { register, handleSubmit, reset, formState: {errors} } = useForm()
@@ -12,6 +13,7 @@ const Form = () => {
   if (goToHome) {
     return <Navigate to="/" />
   }
+
 
 return (
   <>
@@ -46,7 +48,12 @@ return (
         {/* <input className="img-file" type="file" name="imagen" accept="image/*"/> */}
         </label>
 
-        <button type="submit">Guardar</button>
+        <div className="buttons-container">
+          <button type="submit">Guardar</button>
+          <Link to="/">
+          <button type="submit">Cancelar</button>
+          </Link>
+        </div>
 
       </form>
     </>

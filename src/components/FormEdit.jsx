@@ -2,9 +2,17 @@ import React from 'react'
 import './Form.css'
 import { useForm } from 'react-hook-form'
 import { editSculptures } from '../services/sculptures-services';
+import { Navigate } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const FormEdit = () => {
   const { register, handleSubmit, reset, formState: {errors} } = useForm()
+
+  const [goToHome, setGoToHome] = React.useState(false);
+
+  if (goToHome) {
+    return <Navigate to="/" />
+  }
 
   const validateLink = (value) => {
     // Expresion regular que valida links
@@ -49,8 +57,13 @@ const FormEdit = () => {
           <input {...register("imageUrl", {validate: validateLink, required: "Hace falta un link"})} placeholder="Escribe el link de tu imagen" type="link"/>
           {errors.imageUrl && <div className="text-error">{errors.imageUrl.message}</div>}
           {/* <input className="img-file" type="file" name="imagen" accept="image/*"/> */}
-  
+
+          <div className="buttons-container">
           <button type="submit">Guardar</button>
+          <Link to="/">
+          <button type="submit">Cancelar</button>
+          </Link>
+          </div>
   
         </form>
       </>
