@@ -7,24 +7,6 @@ import { Navigate } from 'react-router-dom'
 const Form = () => {
   const { register, handleSubmit, reset, formState: {errors} } = useForm()
 
-  const validateLink = (value) => {
-    // Expresion regular que valida links
-    const linkRegex = /^(ftp|http|https):\/\/[^ "]+$/;
-    if (!linkRegex.test(value)) {
-      return "Por favor, añade solo formato http";
-    }
-    return true;
-  };
-
-  const validateNumber = (value) => {
-    // Expresion regular que indica que solo devuelva numeros
-    const numberRegex = /^[0-9]+$/;
-    if (!numberRegex.test(value)) {
-      return "Escribe solo números";
-    }
-    return true;
-  };
-
   const [goToHome, setGoToHome] = React.useState(false);
 
   if (goToHome) {
@@ -46,7 +28,7 @@ return (
         </label>
 
         <label>Año:
-        <input {...register("year", {validate: validateNumber})} type="text" placeholder="Escribe el año de creación" />
+        <input {...register("year", {required:"campo requerido", pattern: {value:/^[0-9]+$/, message:"Sólo es válido formato númerico"}})} type="text" placeholder="Escribe el año de creación" />
         {errors.year && <div className="text-error">{errors.year.message}</div>}
         </label>
 
@@ -59,7 +41,7 @@ return (
         </label>
 
         <label>Imagen de la Escultura:
-        <input {...register("imageUrl", {validate: validateLink, required: "Hace falta un link"})} placeholder="Escribe el link de tu imagen" type="link"/>
+        <input {...register("imageUrl", {required:"Hace falta un link", pattern: {value:/^(ftp|http|https):\/\/[^ "]+$/, message:"Sólo es válido formato http"}})} placeholder="Escribe el link de tu imagen" type="link"/>
         {errors.imageUrl && <div className="text-error">{errors.imageUrl.message}</div>}
         {/* <input className="img-file" type="file" name="imagen" accept="image/*"/> */}
         </label>
