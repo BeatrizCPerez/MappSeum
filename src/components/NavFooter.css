@@ -5,10 +5,9 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    font-family: Montserrat, sans-serif;
 }
 
-header, footer {
+nav, footer {
     background-color: #B19470;
     width: 100%;
     display: flex;
@@ -19,8 +18,12 @@ header, footer {
     padding: 0 15px;
 }
 
-header {
+nav {
     height: 100px;
+}
+
+nav img {
+    height: 60px;
 }
 
 footer {
@@ -38,12 +41,12 @@ footer div {
 }
 
 @media screen and (max-width: 767px) {
-    header {
+    nav {
         height: 70px;
         padding: 0 10px;
     }
 
-    header img {
+    nav img {
         height: 45px;
     }
     
