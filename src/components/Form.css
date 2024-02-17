@@ -29,29 +29,12 @@ form label {
     justify-content: center;
     gap: 30px;
 }
-form button {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 1rem;
-    color: white;
-    background-color: #43766c;
-    border: none;
-    width: 7em;
-    padding: 0.5em;
-    border-radius: 10px;
-    cursor: pointer;
-    align-self: center;
-}
-
-form button:hover {
-    background-color: #39705f;
-    box-shadow: 0 0 10px #43766c;
-}
 
 .form-title {
     font-family: "Merriweather", sans-serif;
     text-align: center;
     color: #43766c;
+    margin-top: 0;
 }
 
 form input {

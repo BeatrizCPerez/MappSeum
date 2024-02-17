@@ -6,7 +6,7 @@ import { Navigate } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 
 const FormEdit = () => {
-  const { register, handleSubmit, reset, formState: {errors} } = useForm()
+  const { register, handleSubmit, reset, formState: { errors } } = useForm()
 
   const [goToHome, setGoToHome] = React.useState(false);
 
@@ -34,45 +34,46 @@ const FormEdit = () => {
 
   return (
     <>
-    
-        <form onSubmit = {handleSubmit(editedSculpture => {editSculptures(); reset()})} className="container-form">
-          <label>Obra:
-            <input {...register("title", {required: "El campo obra esta vacio"})} type="text" placeholder='Escribe el nombre de la obra' />
-            {errors.title && <div className="text-error">{errors.title.message}</div>}
-          </label>
-  
-          <label>Autor:
-            <input {...register("author", {required: true})} type="text" placeholder="Escribe el nombre de Autor" />
-          </label>
 
-          <label>Año:
-            <input {...register("year", {validate: validateNumber})} type="text" placeholder="Escribe el año de creación" />
-            {errors.year && <div className="text-error">{errors.year.message}</div>}
-          </label>
-  
-          <label>Material:
-            <input {...register("material")} type="text" placeholder="Escribe el tipo de material" />
-          </label>
-  
-          <label>Ubicación:
-            <input {...register("location")} type="text" placeholder="Escribe la ubicación" />
-          </label>
-  
-          <label>Imagen de la Escultura:
-            <input {...register("imageUrl", {validate: validateLink, required: "Hace falta un link"})} placeholder="Escribe el link de tu imagen" type="link"/>
-            {errors.imageUrl && <div className="text-error">{errors.imageUrl.message}</div>}
-            {/* <input className="img-file" type="file" name="imagen" accept="image/*"/> */}
-          </label>
-          
-          <div className="buttons-container">
-          <button type="submit">Guardar</button>
+      <form onSubmit={handleSubmit(editedSculpture => { editSculptures(); reset() })} className="container-form">
+        <label>Obra:
+          <input {...register("title", { required: "El campo obra esta vacio" })} type="text" placeholder='Escribe el nombre de la obra' />
+          {errors.title && <div className="text-error">{errors.title.message}</div>}
+        </label>
+
+        <label>Autor:
+          <input {...register("author", { required: true })} type="text" placeholder="Escribe el nombre de Autor" />
+        </label>
+
+        <label>Año:
+          <input {...register("year", { validate: validateNumber })} type="text" placeholder="Escribe el año de creación" />
+          {errors.year && <div className="text-error">{errors.year.message}</div>}
+        </label>
+
+        <label>Material:
+          <input {...register("material")} type="text" placeholder="Escribe el tipo de material" />
+        </label>
+
+        <label>Ubicación:
+          <input {...register("location")} type="text" placeholder="Escribe la ubicación" />
+        </label>
+
+        <label>Imagen de la Escultura:
+          <input {...register("imageUrl", { validate: validateLink, required: "Hace falta un link" })} placeholder="Escribe el link de tu imagen" type="link" />
+          {errors.imageUrl && <div className="text-error">{errors.imageUrl.message}</div>}
+          {/* <input className="img-file" type="file" name="imagen" accept="image/*"/> */}
+        </label>
+
+        <div className="buttons-container">
+          <button type="submit" className="button" style={{ backgroundColor: "#43766C"}}>Guardar</button>
           <Link to="/">
-          <button type="submit">Cancelar</button>
+            <button type="submit" className="button" style={{ backgroundColor: "#43766C"}}>Cancelar</button>
           </Link>
-          </div>
-  
-        </form>
-      </>
-  )};
+        </div>
+
+      </form>
+    </>
+  )
+};
 
 export default FormEdit

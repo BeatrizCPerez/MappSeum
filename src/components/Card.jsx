@@ -4,16 +4,9 @@ import styled from "styled-components";
 import { deleteSculptures } from "../services/sculptures-services";
 import { Link } from "react-router-dom";
 
-const Button = ({ onClick, text, variant }) => {
-  return (
-    <button className={`button`} onClick={onClick} style={{backgroundColor: variant === "delete" ? '#500707': 'black'}}>
-      {variant === "delete" ? "Eliminar" : variant === "modify" ? "Modificar" : text}
-    </button>
-  );
-}
-
 const StyledCard = styled.div`
   display: flex;
+  align-items: center;
   border: 1px solid #B19470;
   border-radius: 5px;
   box-shadow: 5px 5px 5px 0px lightgray;  
@@ -32,7 +25,7 @@ const StyledCard = styled.div`
   }
 `
 
-const Image = styled.img`
+const SculptureImage = styled.img`
   min-width: 260px;
   height: 320px;
   object-fit: cover;
@@ -57,31 +50,40 @@ const MoreDetails = styled.div`
 `
 
 const Card = ({ data }) => {
-  const { id, imageUrl, title, author,material, year, location } = data;
+  const { id, imageUrl, title, author, material, year, location } = data;
 
   return (
     <StyledCard key={id}>
 
-        <Image src={imageUrl} alt={title}/>
-{/*     <img src={'src/assets/Cuadro.png'} className="sculpture-frame"></img> */}
+      <SculptureImage src={imageUrl} alt={title} />
+      {/*     <img src={'src/assets/Cuadro.png'} className="sculpture-frame"></img> */}
 
-      
-      <div style={{display: "flex", flexDirection: "column", justifyContent: "space-between", width: "100%"}}>
-        <section style={{padding: "10px"}}>
+      <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", width: "100%", height: "100%"}}>
+        
+        <section style={{ padding: "10px" }}>
+          
           <h3>{title}</h3>
-          <h4>Autor: {author}</h4>          
-        <MoreDetails>
-          <p>Año: {year}</p>
-          <p>Material: {material}</p>
-          <p>Localización: {location}</p>
-        </MoreDetails>
+          
+          <h4>Autor: {author}</h4>
+          
+          <MoreDetails>
+            <p>Año: {year}</p>
+            <p>Material: {material}</p>
+            <p>Localización: {location}</p>
+          </MoreDetails>
+        
         </section>
-        <div style={{display: "flex", flexWrap: "wrap", justifyContent: "center", margin: "10px", gap: "5px"}}>
+        
+        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", margin: "10px", gap: "5px" }}>
+        
           <Link to="/edit-sculpture">
-            <Button variant="modify"/>
+            <button className="button" style={{ backgroundColor: "#000000" }}>Modificar</button>
           </Link>
-          <Button variant="delete" onClick={() => deleteSculptures(id)}/> 
+        
+          <button className="button" style={{ backgroundColor: "#500707" }} onClick={() => deleteSculptures(id)}>Eliminar</button>
+        
         </div>
+      
       </div>
 
     </StyledCard>

@@ -1,23 +1,83 @@
 import React from 'react'
-import "./NavFooter.css"
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
+import styled from 'styled-components'
+
+const Navbar = styled.nav`
+  background-color: #B19470;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat';
+  box-sizing: border-box;
+  padding: 0 15px;
+  height: 100px;  
+
+  @media screen and (max-width: 767px) {
+    height: 70px;
+    padding: 0 10px;
+  }
+`
+const MapseumLogo = styled.img`
+  height: 60px; 
+
+  @media screen and (max-width: 767px) {
+    height: 45px;
+  } 
+`
+const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  `
+const Footer = styled.footer`
+  background-color: #B19470;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat';
+  box-sizing: border-box;
+  padding: 0 15px;
+  height: 50px;
+
+  @media screen and (max-width: 767px) {
+    height: 35px;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+`
+const SocialMediaLogo = styled.img`
+  height: 30px;
+  margin-top: 5px;
+
+  @media screen and (max-width: 767px) {
+    height: 25px;
+    margin-top: 5px;
+  } 
+`
 
 const NavFooter = () => {
   return (
-    <div className="body-center">
-      <nav>
-        <a href="/"><img src="src\assets\mappseum-logo.png" /></a>
-      </nav>
-      <Outlet />
-      <footer>
+    <>
+      <Navbar>
+        <Link to="/"><MapseumLogo src="src\assets\mappseum-logo.png" /></Link>
+      </Navbar>
+
+      <Main>
+        <Outlet />      
+      </Main>
+
+      <Footer >
         <p>© 2024 MappSeum</p>
-        <div>
-          <a href='https://www.facebook.com/' target='blank'><img src="src\assets\logos-redes\Facebook.png" /></a>
-          <a href="https://www.instagram.com/" target='blank'><img src="src\assets\logos-redes\Instagram.png" /></a>
-          <a href="https://github.com/BeatrizCPerez/MappSeum" target='blank'><img src="src\assets\logos-redes\GitHub.png" /></a>
+        <div style={{ display: "flex", gap: "15px"}}>
+          <a href='https://www.facebook.com/' target='blank'><SocialMediaLogo src="src\assets\logos-redes\Facebook.png" /></a>
+          <a href="https://www.instagram.com/" target='blank'><SocialMediaLogo src="src\assets\logos-redes\Instagram.png" /></a>
+          <a href="https://github.com/BeatrizCPerez/MappSeum" target='blank'><SocialMediaLogo src="src\assets\logos-redes\GitHub.png" /></a>
         </div>
-      </footer>
-    </div>
+      </Footer>
+    </>
   )
 }
 
