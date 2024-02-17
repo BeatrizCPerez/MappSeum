@@ -27,7 +27,7 @@ const Home = () => {
 
   return (
     <>
-      <img style={{position: "absolute", marginLeft: "50%", width: "80px"}} src="src\assets\Logo-circular.png" alt="../" />
+      <img style={{position: "absolute", marginLeft: "50%", width: "80px"}} src="src\assets\circulos.png" alt="../" />
       <h2 style={{ display: "flex", flexDirection: "column", gap: "10px", margin: "20px" }}>Esculturas
         <span style={{ fontWeight: "lighter", textAlign: "center" }}>que Inspiran</span>
         Explorando la Belleza </h2>

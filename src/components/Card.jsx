@@ -23,6 +23,11 @@ const StyledCard = styled.div`
     gap: 5px;
     max-width: 320px;
   }
+
+  @media screen and (max-width: 360px) {
+    gap: 5px;
+    max-width: 250px;
+  }
 `
 
 const SculptureImage = styled.img`
@@ -41,6 +46,11 @@ const SculptureImage = styled.img`
     min-width: 160px;
     height: 220px;
   }
+
+  @media screen and (max-width: 360px) {
+    min-width: 120px;
+    height: 180px;
+  }
 `
 
 const MoreDetails = styled.div`
@@ -56,7 +66,7 @@ const Card = ({ data }) => {
     <StyledCard key={id}>
 
       <SculptureImage src={imageUrl} alt={title} />
-      {/*     <img src={'src/assets/Cuadro.png'} className="sculpture-frame"></img> */}
+      {/*     <img src={'src/assets/frame.png'} className="sculpture-frame"></img> */}
 
       <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", width: "100%", height: "100%"}}>
         

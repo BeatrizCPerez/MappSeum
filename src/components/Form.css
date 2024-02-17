@@ -6,13 +6,8 @@
     border: solid 2px #43766c;
     border-radius: 10px;
     box-shadow: 0 0 10px #43766c;
+    background: center / contain no-repeat;
     background-image: linear-gradient(rgba(248, 250, 229, 0.5), rgba(248, 250, 229, 0.5)), url(src/assets/escultura-mujer.svg);
-    background-size: 26em;
-    /* Asegura que la imagen cubra todo el contenedor */
-    background-position-y: 90px;
-    /* Evita que la imagen se repita */
-    background-position-x: 130px;
-    background-repeat: no-repeat;
     gap: 30px;
 }
 
@@ -34,7 +29,7 @@ form label {
     font-family: "Merriweather", sans-serif;
     text-align: center;
     color: #43766c;
-    margin-top: 0;
+    margin-top: 5px;
 }
 
 form input {
@@ -44,12 +39,12 @@ form input {
     border: none;
     background: none;
     border-bottom: 2px solid #43766c;
+    margin-top: 6px;
 }
 
 ::placeholder {
-    color: #a3a3a3c1;
+    color: #AAA9A9;
     font-size: 1rem;
-
 }
 
 .text-error{
@@ -63,29 +58,34 @@ form input {
     color: #43766c;
 } */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .container-form {
-        background-size: 20em;
-        /* Asegura que la imagen cubra todo el contenedor */
-        background-position-y: 120px;
-        /* Evita que la imagen se repita */
-        background-position-x: 20px;
+        padding: 20px;
+        gap: 20px;
     }
 
-    form h1 {
+    .form-title {
         font-size: 1.5rem;
-    }
-
-    form input {
-        font-size: 0.7rem;
-        padding-top: 1em;
+        margin-top: 5px;
     }
 
     form label {
         font-size: 1rem;
     }
-
-    form button {
+    
+    form input {
         font-size: 0.8rem;
     }
-}
+    
+    ::placeholder {
+        font-size: 0.8rem;
+    }
+    
+    .text-error{
+        font-size: 0.7rem;
+    }
+
+    .buttons-container {
+        gap: 10px;
+    }    
+} 
