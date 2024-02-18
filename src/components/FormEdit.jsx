@@ -14,28 +14,11 @@ const FormEdit = () => {
     return <Navigate to="/" />
   }
 
-  const validateLink = (value) => {
-    // Expresion regular que valida links
-    const linkRegex = /^(ftp|http|https):\/\/[^ "]+$/;
-    if (!linkRegex.test(value)) {
-      return "Por favor, añade solo formato http";
-    }
-    return true;
-  };
-
-  const validateNumber = (value) => {
-    // Regular expression to validate if value contains only numbers
-    const numberRegex = /^[0-9]+$/;
-    if (!numberRegex.test(value)) {
-      return "Escribe solo números";
-    }
-    return true;
-  };
-
+  
   return (
     <>
 
-      <form onSubmit={handleSubmit(editedSculpture => { editSculptures(); reset() })} className="container-form">
+      <form onSubmit={handleSubmit(editedSculpture => { editSculptures(); reset(); { setGoToHome(true); } })} className="container-form">
         <label>Obra:
           <input {...register("title", { required: "El campo obra esta vacio" })} type="text" placeholder='Escribe el nombre de la obra' />
           {errors.title && <div className="text-error">{errors.title.message}</div>}
@@ -46,7 +29,7 @@ const FormEdit = () => {
         </label>
 
         <label>Año:
-          <input {...register("year", { validate: validateNumber })} type="text" placeholder="Escribe el año de creación" />
+          <input {...register("year",  { required: "campo requerido", pattern: { value: /^[0-9]+$/, message: "Sólo es válido formato númerico"} })} type="text" placeholder="Escribe el año de creación" />
           {errors.year && <div className="text-error">{errors.year.message}</div>}
         </label>
 
@@ -59,7 +42,7 @@ const FormEdit = () => {
         </label>
 
         <label>Imagen de la Escultura:
-          <input {...register("imageUrl", { validate: validateLink, required: "Hace falta un link" })} placeholder="Escribe el link de tu imagen" type="link" />
+          <input {...register("imageUrl", { required: "Hace falta un link", pattern: { value: /^(ftp|http|https):\/\/[^ "]+$/, message: "Sólo es válido formato http" } })} placeholder="Escribe el link de tu imagen" type="link" />
           {errors.imageUrl && <div className="text-error">{errors.imageUrl.message}</div>}
           {/* <input className="img-file" type="file" name="imagen" accept="image/*"/> */}
         </label>
