@@ -1,12 +1,28 @@
 import React from 'react'
 import './Form.css'
 import { useForm } from 'react-hook-form'
-import { editSculptures } from '../services/sculptures-services';
-import { Navigate } from 'react-router-dom'
-import { Link } from 'react-router-dom';
+import { Navigate, Link, useParams } from 'react-router-dom'
+
+// FUNCIONES
+import { editSculptures, getSculptureById } from '../services/sculptures-services';
 
 const FormEdit = () => {
-  const { register, handleSubmit, reset, formState: { errors } } = useForm()
+  const { register, handleSubmit, reset, setValue, formState: { errors } } = useForm();
+  const sculptureId = useParams().id
+
+  const getOneSculpture = async () => {
+    const sculpture = await getSculptureById(sculptureId);
+    setValue("title", sculpture.title)
+    setValue("author", sculpture.author)
+    setValue("year", sculpture.year)
+    setValue("material", sculpture.material)
+    setValue("location", sculpture.location)
+    setValue("imageUrl", sculpture.imageUrl)
+  }
+
+  getOneSculpture();
+
+
 
   const [goToHome, setGoToHome] = React.useState(false);
 
@@ -18,7 +34,7 @@ const FormEdit = () => {
   return (
     <>
 
-      <form onSubmit={handleSubmit(editedSculpture => { editSculptures(); reset(); { setGoToHome(true); } })} className="container-form">
+      <form onSubmit={handleSubmit(editedSculpture => { editSculptures(sculptureId, editedSculpture); reset(); { setGoToHome(true); } })} className="container-form">
         <label>Obra:
           <input {...register("title", { required: "El campo obra esta vacio" })} type="text" placeholder='Escribe el nombre de la obra' />
           {errors.title && <div className="text-error">{errors.title.message}</div>}

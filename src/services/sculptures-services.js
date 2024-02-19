@@ -5,6 +5,13 @@ export const getSculptures = async () => {
     return data;
 }
 
+//GET una escultura
+export const getSculptureById = async (id) => {
+    const response = await fetch(`http://localhost:3000/sculptures/${id}`);
+    const data = await response.json();
+    return data;
+}
+
 // DELETE
 export const deleteSculptures = async (id) => {
     if (confirm("¿Estás seguro que quieres eliminar?") === true) {
@@ -37,16 +44,8 @@ export const createSculptures = async (newSculptures) => {
 
 // PUT - EN PROCESO 
 
-export const editSculptures = async () => {
-    const data = {
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Michelangelo%27s_David_-_right_view_2.jpg/270px-Michelangelo%27s_David_-_right_view_2.jpg",
-        "title": "leite",
-        "author": "olivia maria",
-        "material": "Madera y ladrillo",
-        "year": 1520,
-        "location": "venezuela, madrid"
-    }
-    const response = await fetch(`http://localhost:3000/sculptures/3`, {
+export const editSculptures = async (id, data) => {
+    const response = await fetch(`http://localhost:3000/sculptures/${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
@@ -55,4 +54,5 @@ export const editSculptures = async () => {
     });
     return response;
 }
+
 
