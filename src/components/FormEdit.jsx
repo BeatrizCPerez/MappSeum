@@ -34,27 +34,30 @@ const FormEdit = () => {
   return (
     <>
 
-      <form onSubmit={handleSubmit(editedSculpture => { editSculptures(sculptureId, editedSculpture); reset(); { setGoToHome(true); } })} className="container-form">
-        <label>Obra:
+      <form onSubmit={handleSubmit(editedSculpture => { editSculptures(sculptureId, editedSculpture).then(()=>setGoToHome(true))})} className="container-form">
+      <label>Obra:
           <input {...register("title", { required: "El campo obra esta vacio" })} type="text" placeholder='Escribe el nombre de la obra' />
           {errors.title && <div className="text-error">{errors.title.message}</div>}
         </label>
 
         <label>Autor:
-          <input {...register("author", { required: true })} type="text" placeholder="Escribe el nombre de Autor" />
+          <input {...register("author", { required: "campo requerido" })} type="text" placeholder="Escribe el nombre de Autor" />
+          {errors.year && <div className="text-error">{errors.year.message}</div>}
         </label>
 
         <label>Año:
-          <input {...register("year",  { required: "campo requerido", pattern: { value: /^[0-9]+$/, message: "Sólo es válido formato númerico"} })} type="text" placeholder="Escribe el año de creación" />
+          <input {...register("year", { required: "campo requerido", pattern: { value: /^[0-9]+$/, message: "Sólo es válido formato númerico" } })} type="text" placeholder="Escribe el año de creación" />
           {errors.year && <div className="text-error">{errors.year.message}</div>}
         </label>
 
         <label>Material:
-          <input {...register("material")} type="text" placeholder="Escribe el tipo de material" />
+          <input {...register("material", { required: "campo requerido" })} type="text" placeholder="Escribe el tipo de material" />
+          {errors.year && <div className="text-error">{errors.year.message}</div>}
         </label>
 
         <label>Ubicación:
-          <input {...register("location")} type="text" placeholder="Escribe la ubicación" />
+          <input {...register("location", { required: "campo requerido" })} type="text" placeholder="Escribe la ubicación" />
+          {errors.year && <div className="text-error">{errors.year.message}</div>}
         </label>
 
         <label>Imagen de la Escultura:
