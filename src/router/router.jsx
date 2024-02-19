@@ -20,7 +20,7 @@ const router = createBrowserRouter([
         element: <Create />,
       },
       {
-        path: "/edit-sculpture",
+        path: "/edit-sculpture/:id",
         element: <Edit />
       }
     ]
