@@ -2,7 +2,8 @@
 import React from "react";
 import styled from "styled-components";
 import { deleteSculptures } from "../services/sculptures-services";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 const StyledCard = styled.div`
   display: flex;
@@ -61,6 +62,7 @@ const MoreDetails = styled.div`
 
 const Card = ({ data }) => {
   const { id, imageUrl, title, author, material, year, location } = data;
+  const navigate = useNavigate()
 
   return (
     <StyledCard key={id}>
@@ -86,9 +88,9 @@ const Card = ({ data }) => {
         
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", margin: "10px", gap: "5px" }}>
         
-          <Link to="/edit-sculpture">
-            <button className="button" style={{ backgroundColor: "#000000" }}>Modificar</button>
-          </Link>
+
+            <button onClick={() => navigate(`/edit-sculpture/${id}`)} className="button" style={{ backgroundColor: "#000000" }}>Modificar</button>
+          
         
           <button className="button" style={{ backgroundColor: "#500707" }} onClick={() => deleteSculptures(id)}>Eliminar</button>
         
