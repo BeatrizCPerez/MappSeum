@@ -78,7 +78,7 @@ const Card = ({ data }) => {
             <button onClick={() => navigate(`/edit-sculpture/${id}`)} className="button" style={{ backgroundColor: "#000000" }}>Modificar</button>
           
         
-          <button className="button" style={{ backgroundColor: "#500707" }} onClick={() => deleteSculptures(id)}>Eliminar</button>
+          <button className="button" style={{ backgroundColor: "#500707" }} onClick={() => deleteSculptures(id).then(navigate("/"))}>Eliminar</button>
         
         </div>
       
