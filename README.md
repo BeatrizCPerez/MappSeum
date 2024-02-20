@@ -54,15 +54,14 @@ Explora cada tarjeta para obtener información detallada sobre cada obra en el m
 
 1. Asegúrate de tener Node.js instalado. 
 2. Ejecuta npm install para instalar las dependencias del proyecto.
+3. npm run dev
 
 **Iniciar la API Simulada:**
 
 **Utiliza json-server para simular una API.** 
 
-1. Ejecuta npm install json-server en una terminal.
-2. A continuacion ponemos npm init -y
-3. npx json-server db.json este nos proporcionara la url del servidor.
-4. Ejecuta el servidor de React en otra terminal para mantener los 2 servidores arriba y poder visualizar con exito la web.
+1. npm run api este nos proporcionara la url del servidor.
+2. Ejecuta el servidor de React en otra terminal para mantener los 2 servidores arriba y poder visualizar con exito la web.
 
 Explora y Disfruta:
 
