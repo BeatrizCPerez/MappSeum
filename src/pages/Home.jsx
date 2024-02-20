@@ -6,7 +6,7 @@ import Card from "../components/Card";
 const Home = () => {
 
   const sculptures = useLoaderData();
-
+  
   /* const [sculptures, setSculptures] = useState([]);
 
   useEffect(() => {
@@ -27,11 +27,11 @@ const Home = () => {
 
   return (
     <>
-      <img style={{position: "absolute", marginLeft: "50%", width: "80px"}} src="src\assets\circulos.png" alt="../" />
-      <h2 style={{ display: "flex", flexDirection: "column", gap: "10px", margin: "20px" }}>Esculturas
+      <img className="circulos" src="src\assets\circulos.png" alt="cirulos" />
+      <h2>Esculturas
         <span style={{ fontWeight: "lighter", textAlign: "center" }}>que Inspiran</span>
         Explorando la Belleza </h2>
-      <Link to="/add-sculpture"><button className="button" style={{ backgroundColor: "#43766C", marginBottom: "20px" }}>Agregar Escultura</button></Link>
+      <Link to="/add-sculpture"><button className="button" style={{ backgroundColor: "#43766C", margin: '10px' }}>Agregar Escultura</button></Link>
       <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
         {/* Renderizar las tarjetas con los datos de la API */}
         {sculptures.map((sculpture) => (
