@@ -19,13 +19,13 @@
       "location": "Ciudad del Vaticano"
     },
     {
-      "id": "3",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Michelangelo%27s_David_-_right_view_2.jpg/270px-Michelangelo%27s_David_-_right_view_2.jpg",
-      "title": "El David",
-      "author": "Miguel Ángel",
-      "material": "Mármol Blanco",
-      "year": 1504,
-      "location": "Galeria de la Academia, Florencia, Italia"
+      "title": "leite",
+      "author": "olivia maria",
+      "material": "Madera y ladrillo",
+      "year": 1520,
+      "location": "venezuela, madrid",
+      "id": "3"
     }
   ]
 }
