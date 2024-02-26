@@ -10,22 +10,22 @@
       "location": "Madrid, España"
     },
     {
-      "title": "La Piedad ",
+      "id": "2",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Michelangelo%27s_Pieta_5450_cropncleaned.jpg/600px-Michelangelo%27s_Pieta_5450_cropncleaned.jpg",
+      "title": "La Piedad del Vaticano",
       "author": "Miguel Ángel",
       "year": 1499,
       "material": "Mármol",
-      "location": "Ciudad del Vaticano",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Michelangelo's_Pieta_5450_cropncleaned.jpg",
-      "id": "2"
+      "location": "Ciudad del Vaticano"
     },
     {
-      "title": "Tutankamon",
-      "author": "random autor",
-      "year": "123",
-      "material": "Oro",
-      "location": "Egipto",
-      "imageUrl": "https://images.ecestaticos.com/OZkENNjzVfwhUJLQP4bmJ1EZX-0=/0x0:2121x1414/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fdd4%2Fa44%2Fa41%2Fdd4a44a41d63c1b0dcaaafde1b57b84e.jpg",
-      "id": "ec7c"
+      "id": "3",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Michelangelo%27s_David_-_right_view_2.jpg/270px-Michelangelo%27s_David_-_right_view_2.jpg",
+      "title": "El David",
+      "author": "Miguel Ángel",
+      "material": "Mármol Blanco",
+      "year": 1504,
+      "location": "Galeria de la Academia, Florencia, Italia"
     }
   ]
 }

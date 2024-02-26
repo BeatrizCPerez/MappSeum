@@ -18,7 +18,7 @@ const Form = () => {
   return (
     <>
 
-      <form onSubmit={handleSubmit(newSculpture => { createSculptures(newSculpture); reset(); { setGoToHome(true); } })} className="container-form">
+      <form onSubmit={handleSubmit(newSculpture => { createSculptures(newSculpture).then(()=>setGoToHome(true))})} className="container-form">
 
         <label>Obra:
           <input {...register("title", { required: "El campo obra esta vacio" })} type="text" placeholder='Escribe el nombre de la obra' />
