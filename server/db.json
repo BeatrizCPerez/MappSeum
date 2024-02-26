@@ -26,6 +26,15 @@
       "year": 1520,
       "location": "venezuela, madrid",
       "id": "3"
+    },
+    {
+      "id": "34fa",
+      "imageUrl": "https://es.wikipedia.org/wiki/Escultura_del_Antiguo_Egipto#/media/Archivo:Pharaoh_Menhaure_triad_statue,_Caire-Mus%C3%A9e.jpg",
+      "title": "Los faraones ",
+      "author": "Kristy",
+      "material": "Piedra",
+      "year": "145",
+      "location": "Egipto"
     }
   ]
 }
