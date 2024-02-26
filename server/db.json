@@ -10,31 +10,13 @@
       "location": "Madrid, España"
     },
     {
-      "id": "2",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Michelangelo's_Pieta_5450_cropncleaned.jpg",
-      "title": "La Piedad del Vaticano",
+      "title": "La Piedad ",
       "author": "Miguel Ángel",
-      "material": "Mármol",
       "year": 1499,
-      "location": "Ciudad del Vaticano"
-    },
-    {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Michelangelo%27s_David_-_right_view_2.jpg/270px-Michelangelo%27s_David_-_right_view_2.jpg",
-      "title": "leite",
-      "author": "olivia maria",
-      "material": "Madera y ladrillo",
-      "year": 1520,
-      "location": "venezuela, madrid",
-      "id": "3"
-    },
-    {
-      "id": "34fa",
-      "imageUrl": "https://es.wikipedia.org/wiki/Escultura_del_Antiguo_Egipto#/media/Archivo:Pharaoh_Menhaure_triad_statue,_Caire-Mus%C3%A9e.jpg",
-      "title": "Los faraones ",
-      "author": "Kristy",
-      "material": "Piedra",
-      "year": "145",
-      "location": "Egipto"
+      "material": "Mármol",
+      "location": "Ciudad del Vaticano",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Michelangelo's_Pieta_5450_cropncleaned.jpg",
+      "id": "2"
     }
   ]
 }
