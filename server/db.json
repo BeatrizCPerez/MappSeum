@@ -17,6 +17,15 @@
       "location": "Ciudad del Vaticano",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Michelangelo's_Pieta_5450_cropncleaned.jpg",
       "id": "2"
+    },
+    {
+      "title": "Tutankamon",
+      "author": "random autor",
+      "year": "123",
+      "material": "Oro",
+      "location": "Egipto",
+      "imageUrl": "https://images.ecestaticos.com/OZkENNjzVfwhUJLQP4bmJ1EZX-0=/0x0:2121x1414/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fdd4%2Fa44%2Fa41%2Fdd4a44a41d63c1b0dcaaafde1b57b84e.jpg",
+      "id": "ec7c"
     }
   ]
 }
