@@ -6,24 +6,6 @@ import Card from "../components/Card";
 const Home = () => {
 
   const sculptures = useLoaderData();
-  
-  /* const [sculptures, setSculptures] = useState([]);
-
-  useEffect(() => {
-    // Función para realizar la petición a la API
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('http://localhost:3000/sculptures');
-        setSculptures(response.data);
-      } catch (error) {
-        console.error('Error al obtener los datos de la API:', error);
-      }
-    };
-
-    // Llamada a la función para realizar la petición cuando el componente se monta
-    fetchData();
-  }, []); // El segundo argumento del useEffect ([]) indica que la llamada solo se realiza una vez al montar el componente
- */
 
   return (
     <>
