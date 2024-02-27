@@ -5,19 +5,24 @@ import { expect } from "vitest";
 import { MemoryRouter } from "react-router";
 import '@testing-library/jest-dom';
 
-  test("textoFooter", () => {
-    render(<MemoryRouter><NavFooter/></MemoryRouter>)
+
+describe("NavFooter", ()=>{
+
+    beforeEach(()=>{
+        render(<MemoryRouter><NavFooter/></MemoryRouter>)
+    })
+
+  test("Verificar que el texto Mappseum esta dentro delc componente", () => {
 
     const texto = screen.getByText(/MappSeum/i);
     expect(texto).toBeDefined();
   })
 
   test("Verificar que existe una imagen de logo", () => {
-    render(<MemoryRouter><NavFooter/></MemoryRouter>)
 
     const logoImage = screen.getByAltText(/logoMappseum/i);
     expect(logoImage).toBeInTheDocument();
     expect(logoImage).toHaveAttribute('src', 'src/assets/mappseum-logo.png');
   })
 
-  
+})
