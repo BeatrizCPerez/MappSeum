@@ -1,7 +1,7 @@
 
 # MappSeum
 
-¡Bienvenido al Museo de Esculturas, MappSeum!
+¡Bienvenido al Museo de Esculturas, MappSeum!..
 
 Esta aplicación web fue desarrollada con React y permite gestionar esculturas mediante operaciones CRUD. A continuación, encontrarás detalles adicionales sobre la estructura, funcionalidades y pasos específicos para el CRUD.
 
@@ -25,7 +25,7 @@ Al hacer clic en "Eliminar" nos aparecerá una confirmacion preguntandonos si qu
 
 Accesible desde la página principal al hacer clic en el botón "Modificar" de una escultura.
 Muestra un formulario prellenado con los datos actuales de la escultura seleccionada.
-Permite realizar modificaciones y guardar los cambios mediante el método PUT.
+Permite realizar modificaciones y guardar los cambios mediante el método PUT..
 
 ![](src/assets/Pagina-añade.PNG)
 
