@@ -66,7 +66,7 @@ const NavFooter = () => {
   return (
     <>
       <Navbar>
-        <Link to="/"><MapseumLogo src="src\assets\mappseum-logo.png" /></Link>
+        <Link to="/"><MapseumLogo src="src/assets/mappseum-logo.png" alt="logoMappseum" /></Link>
       </Navbar>
 
       <Main>
