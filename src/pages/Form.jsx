@@ -1,16 +1,33 @@
 import './Form.css'
-import { createSculptures } from '../services/sculptures-services'
 import { useForm } from 'react-hook-form'
-import { useNavigate } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
+import { createSculptures, editSculptures, getSculptureById } from '../services/sculptures-services';
 
-const Form = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm()
+const Form = ({ method }) => {
   const navigate = useNavigate();
+  const { register, handleSubmit, setValue, formState: { errors } } = useForm();
+
+  if (method === "put") {
+
+    const sculptureId = useParams().id;
+
+    const getOneSculpture = async () => {
+      const sculpture = await getSculptureById(sculptureId);
+      setValue("title", sculpture.title)
+      setValue("author", sculpture.author)
+      setValue("year", sculpture.year)
+      setValue("material", sculpture.material)
+      setValue("location", sculpture.location)
+      setValue("imageUrl", sculpture.imageUrl)
+    }
+    getOneSculpture();
+
+  }
+
   return (
     <>
-
-      <form onSubmit={handleSubmit(newSculpture => { createSculptures(newSculpture).then(()=>navigate("/"))})} className="container-form">
-
+      <h1 className="form-title">{method === "post" ? "AÑADE UNA NUEVA OBRA" : "EDITAR OBRA"}</h1>
+      <form onSubmit={handleSubmit(data => {if(method==="put"){editSculptures(sculptureId, data).then(() => navigate("/"))}else if(method==="post"){createSculptures(data).then(()=>navigate("/"))}})} className="container-form">
         <label>Obra:
           <input {...register("title", { required: "El campo obra esta vacio" })} type="text" placeholder='Escribe el nombre de la obra' />
           {errors.title && <div className="text-error">{errors.title.message}</div>}
@@ -42,8 +59,8 @@ const Form = () => {
         </label>
 
         <div className="buttons-container">
-          <button type="submit" className="button" style={{ backgroundColor: "#43766C"}}>Guardar</button>
-          <button onClick={() => navigate("/")} className="button" style={{ backgroundColor: "#43766C"}}>Cancelar</button>
+          <button type="submit" className="button" style={{ backgroundColor: "#43766C" }}>Guardar</button>
+          <button onClick={() => navigate("/")} className="button" style={{ backgroundColor: "#43766C" }}>Cancelar</button>
         </div>
 
       </form>
