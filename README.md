@@ -21,13 +21,13 @@ Muestra un listado de esculturas obtenidas de la API simulada.
 Cada tarjeta (card) contiene información detallada sobre una escultura, incluyendo descripción, ubicación, material, etc.
 Cada tarjeta incluye botones para eliminar y modificar la escultura correspondiente.
 
-![Tarjeta de Escultura](src/assets/readme-img/card.PNG)
+![Tarjeta de Escultura](src/assets/readme-img/card.png)
 
 Al hacer clic en "Eliminar" nos aparecerá una confirmación preguntándonos si queremos eliminar la escultura correspondiente. Se elimina de la API y de la página principal.
 
 ### Página de Edición (Modificar Escultura):
 
-![Botones de Acción](src/assets/readme-img/Botones.PNG)
+![Botones de Acción](src/assets/readme-img/buttons.png)
 
 Accesible desde la página principal al hacer clic en el botón "Modificar" de una escultura.
 
@@ -39,7 +39,7 @@ Permite realizar modificaciones y guardar los cambios mediante el método PUT..
 
 ### Página de Agregar (Nueva Escultura):
 
-![Botón Agregar](src/assets/readme-img/Boton-agregar.PNG)
+![Botón Agregar](src/assets/readme-img/add-button.png)
 
 Accesible desde la página principal haciendo clic en el botón "Agregar Escultura".
 
