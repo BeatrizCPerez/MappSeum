@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import NavFooter from "../components/NavFooter";
 import { getSculptures } from "../services/sculptures-services";
-import Form from "../pages/Form";
+import Form from "../pages/Form/Form";
 
 const router = createBrowserRouter([
   {

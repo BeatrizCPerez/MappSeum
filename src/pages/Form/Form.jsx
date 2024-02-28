@@ -1,7 +1,7 @@
 import './Form.css'
 import { useForm } from 'react-hook-form'
 import { useParams, useNavigate } from 'react-router-dom'
-import { createSculptures, editSculptures, getSculptureById } from '../services/sculptures-services';
+import { createSculptures, editSculptures, getSculptureById } from '../../services/sculptures-services';
 
 const Form = ({ method }) => {
   const navigate = useNavigate();
@@ -59,7 +59,7 @@ const Form = ({ method }) => {
         </label>
 
         <div className="buttons-container">
-          <button type="submit" className="button" style={{ backgroundColor: "#43766C" }}>Guardar</button>
+          <button type="submit" className="button" style={{ backgroundColor: "#43766C" }}>{method === "post" ? "Añadir" : "Actualizar"}</button>
           <button onClick={() => navigate("/")} className="button" style={{ backgroundColor: "#43766C" }}>Cancelar</button>
         </div>
 
