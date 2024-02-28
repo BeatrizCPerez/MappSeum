@@ -7,7 +7,7 @@
 - [ESTRUCTURA DEL PROYECTO](#ESTRUCTURA-DEL-PROYECTO)
 - [LENGUAJES Y HERRAMIENTAS UTILIZADAS](#LENGUAJES-Y-HERRAMIENTAS-UTILIZADAS)
 - [INSTALACIÓN](#INSTALACIÓN)
-- [COLABORADORAS](#COLABORADORAS)
+- [COLABORADORAS](#COLABORADORAS-:family:)
 
 ## DESCRIPCIÓN
 
@@ -46,7 +46,7 @@ Al agregar una nueva escultura, esta se refleja en la página principal. Al rell
 
 La página principal muestra un listado completo de esculturas con detalles específicos. Explora cada tarjeta para obtener información detallada sobre cada obra en el museo.
 
-## LENGUAJES Y HERRAMIENTAS UTILIZADAS :hammer:
+## LENGUAJES Y HERRAMIENTAS UTILIZADAS
 <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg" title="VSCode" alt="VSCode" width="40" height="40"/>&nbsp;
     <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" title="GIT" alt="GIT" width="40" height="40"/>&nbsp;
@@ -84,7 +84,7 @@ npm run api
 
 ***
 
-## COLABORADORAS  :family:
+## COLABORADORAS :family:
 - Scrum Master: [Leite](https://github.com/leiteway)
 - Product Owner: [Beatriz C](https://github.com/BeatrizCPerez)
 - Web developer: [Kris](https://github.com/krisneiras)
