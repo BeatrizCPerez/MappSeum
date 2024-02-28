@@ -1,72 +1,89 @@
-
 # MappSeum
 
 ¡Bienvenido al Museo de Esculturas, MappSeum!
-
 Esta aplicación web fue desarrollada con React y permite gestionar esculturas mediante operaciones CRUD. A continuación, encontrarás detalles adicionales sobre la estructura, funcionalidades y pasos específicos para el CRUD.
 
-**Estructura del Proyecto:**
+## Estructura del Proyecto:
 
-- Página Principal (Listado de Esculturas):
+### Página Principal (Listado de Esculturas):
 
 Muestra un listado de esculturas obtenidas de la API simulada.
 Cada tarjeta (card) contiene información detallada sobre una escultura, incluyendo descripción, ubicación, material, etc.
 Cada tarjeta incluye botones para eliminar y modificar la escultura correspondiente.
 
-![](src\assets\readme-img\card.PNG)
+![Tarjeta de Escultura](src/assets/card.PNG)
 
+Al hacer clic en "Eliminar" nos aparecerá una confirmación preguntándonos si queremos eliminar la escultura correspondiente. Se elimina de la API y de la página principal.
 
-Al hacer clic en "Eliminar" nos aparecerá una confirmacion preguntandonos si queremos eliminar la escultura correspondiente. Se elimina de la API y de la página principal.
+![Botones de Acción](src/assets/Botones.PNG)
 
-![](src\assets\readme-img\Botones.PNG)
+***
 
-
-- Página de Edición (Modificar Escultura):
+### Página de Edición (Modificar Escultura):
 
 Accesible desde la página principal al hacer clic en el botón "Modificar" de una escultura.
 Muestra un formulario prellenado con los datos actuales de la escultura seleccionada.
 Permite realizar modificaciones y guardar los cambios mediante el método PUT.
 
-![](src\assets\readme-img\Pagina-añade.PNG)
+![Página de Edición](src/assets/Pagina-añade.PNG)
 
-- Página de Agregar (Nueva Escultura):
+***
+
+### Página de Agregar (Nueva Escultura):
 
 Accesible desde la página principal haciendo clic en el botón "Agregar Escultura".
 
 
-![](src\assets\readme-img\Boton-agregar.PNG)
-
+![Botón Agregar](src/assets/Boton-agregar.PNG)
 
 Proporciona un formulario para agregar una nueva escultura al museo.
-Al agregar una nueva escultura, esta se refleja en la página principal. Al rellenar la misma y añadir una nueva, nos redirigirá a la página principal.
+Al agregar una nueva escultura, esta se refleja en la página principal. Al rellenar el formulario y añadir una nueva escultura, nos redirigirá a la página principal.
 
+La página principal muestra un listado completo de esculturas con detalles específicos. Explora cada tarjeta para obtener información detallada sobre cada obra en el museo.
 
+***
+## LENGUAJES Y HERRAMIENTAS UTILIZADAS :hammer:
+<div>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg" title="VSCode" alt="VSCode" width="40" height="40"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" title="GIT" alt="GIT" width="40" height="40"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;   
+    <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" title="css3" alt="css3" width="40" height="40"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/github/github-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;   
+    <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg" title=javascript width="40" height="40">    
+    <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" title="React" alt="React" width="40" height="40"/>&nbsp;     
+    <img src="https://github.com/devicons/devicon/blob/master/icons/json/json-original.svg" title="JSON" alt="JSON" width="40" height="40"/>&nbsp;    
+    <img src="https://github.com/devicons/devicon/blob/master/icons/reactrouter/reactrouter-original.svg" title="ReactRouter" alt="ReactRouter" width="40" height="40"/>&nbsp;  
+    <img src="https://github.com/devicons/devicon/blob/master/icons/trello/trello-original.svg" title="Trello" alt="Trello" width="40" height="40"/>&nbsp; 
+</div>
 
+***
 
-La página principal muestra un listado completo de esculturas con detalles específicos.
-Explora cada tarjeta para obtener información detallada sobre cada obra en el museo.
+# Ejecución del Proyecto:
 
+### Instalación de Dependencias:
 
+1. Asegúrate de tener Node.js instalado.
+2. Ejecuta el siguiente comando para instalar las dependencias del proyecto:
+```bash
+npm install
+```
+   
+### Iniciar el Servidor de Desarrollo:
+```bash
+npm run dev
+```
 
-**Ejecución del Proyecto:**
+### Iniciar la API Simulada:
 
-**Instalación de Dependencias:**
+Utiliza json-server para simular una API.
+```bash
+npm run api
+```
 
-1. Asegúrate de tener Node.js instalado. 
-2. Ejecuta npm install para instalar las dependencias del proyecto.
-3. npm run dev
+***
 
-**Iniciar la API Simulada:**
-
-**Utiliza json-server para simular una API.** 
-
-1. npm run api este nos proporcionara la url del servidor.
-2. Ejecuta el servidor de React en otra terminal para mantener los 2 servidores arriba y poder visualizar con exito la web.
-
-Explora y Disfruta:
-
-Explora las esculturas en la página principal.
-Utiliza las funciones CRUD: agregar, eliminar, modificar y explorar las obras del museo.
-
-
-¡Gracias por visitar MappSeum! Esperamos que disfrutes explorando las obras y las funcionalidades de esta aplicación. Si tienes alguna pregunta o problema, no dudes en comunicarte con el equipo de desarrollo. ¡Que disfrutes tu visita! 🎨🏛️
+## COLABORADORAS  :family:
+- Scrum Master: [Leite](https://github.com/leiteway)
+- Product Owner: [Beatriz C](https://github.com/BeatrizCPerez)
+- Web developer: [Kris](https://github.com/krisneiras)
+- Web developer: [Maria](https://github.com/mariandrean)
