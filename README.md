@@ -33,7 +33,7 @@ Accesible desde la página principal al hacer clic en el botón "Modificar" de u
 
 Muestra un formulario prellenado con los datos actuales de la escultura seleccionada.
 
-![Botones de Acción](src/assets/readme-img/edit-form.png)
+![Página de Edición](src/assets/readme-img/edit-form.png)
 
 Permite realizar modificaciones y guardar los cambios mediante el método PUT..
 
@@ -45,7 +45,7 @@ Accesible desde la página principal haciendo clic en el botón "Agregar Escultu
 
 Proporciona un formulario para agregar una nueva escultura al museo.
 
-![Página de Edición](src/assets/readme-img/add-form.PNG)
+![Página de Edición](src/assets/readme-img/add-form.png)
 
 Al agregar una nueva escultura, esta se refleja en la página principal. Al rellenar el formulario y añadir una nueva escultura, nos redirigirá a la página principal.
 
