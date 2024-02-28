@@ -45,7 +45,7 @@ Accesible desde la página principal haciendo clic en el botón "Agregar Escultu
 
 Proporciona un formulario para agregar una nueva escultura al museo.
 
-![Página de Edición](src/assets/readme-img/Pagina-añade.PNG)
+![Página de Edición](src/assets/readme-img/add-form.PNG)
 
 Al agregar una nueva escultura, esta se refleja en la página principal. Al rellenar el formulario y añadir una nueva escultura, nos redirigirá a la página principal.
 
@@ -89,6 +89,6 @@ npm run api
 
 ## COLABORADORAS
 - Scrum Master: [Leite](https://github.com/leiteway)
-- Product Owner: [Beatriz C](https://github.com/BeatrizCPerez)
+- Product Owner: [Beatriz](https://github.com/BeatrizCPerez)
 - Web developer: [Kris](https://github.com/krisneiras)
 - Web developer: [Maria](https://github.com/mariandrean)
