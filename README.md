@@ -30,7 +30,11 @@ Al hacer clic en "Eliminar" nos aparecerá una confirmación preguntándonos si 
 ![Botones de Acción](src/assets/readme-img/Botones.PNG)
 
 Accesible desde la página principal al hacer clic en el botón "Modificar" de una escultura.
+
 Muestra un formulario prellenado con los datos actuales de la escultura seleccionada.
+
+![Botones de Acción](src/assets/readme-img/edit-form.png)
+
 Permite realizar modificaciones y guardar los cambios mediante el método PUT..
 
 ### Página de Agregar (Nueva Escultura):
