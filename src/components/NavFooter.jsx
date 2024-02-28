@@ -66,7 +66,7 @@ const NavFooter = () => {
   return (
     <>
       <Navbar>
-        <Link to="/"><MapseumLogo src="src\assets\mappseum-logo.png" /></Link>
+        <Link to="/"><MapseumLogo src="src/assets/mappseum-logo.png" alt="logoMappseum" /></Link>
       </Navbar>
 
       <Main>
@@ -76,9 +76,9 @@ const NavFooter = () => {
       <Footer >
         <p>© 2024 MappSeum</p>
         <div style={{ display: "flex", gap: "15px"}}>
-          <a href='https://www.facebook.com/' target='blank'><SocialMediaLogo src="src\assets\logos-redes\Facebook.png" /></a>
-          <a href="https://www.instagram.com/" target='blank'><SocialMediaLogo src="src\assets\logos-redes\Instagram.png" /></a>
-          <a href="https://github.com/BeatrizCPerez/MappSeum" target='blank'><SocialMediaLogo src="src\assets\logos-redes\GitHub.png" /></a>
+          <a href='https://www.facebook.com/' target='blank'><SocialMediaLogo src="src\assets\footer-logos\Facebook.png" /></a>
+          <a href="https://www.instagram.com/" target='blank'><SocialMediaLogo src="src\assets\footer-logos\Instagram.png" /></a>
+          <a href="https://github.com/BeatrizCPerez/MappSeum" target='blank'><SocialMediaLogo src="src\assets\footer-logos\GitHub.png" /></a>
         </div>
       </Footer>
     </>

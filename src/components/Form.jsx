@@ -1,24 +1,15 @@
-import React from 'react'
 import './Form.css'
 import { createSculptures } from '../services/sculptures-services'
 import { useForm } from 'react-hook-form'
-import { Navigate } from 'react-router-dom'
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
 
 const Form = () => {
-  const { register, handleSubmit, reset, formState: { errors } } = useForm()
-
-  const [goToHome, setGoToHome] = React.useState(false);
-
-  if (goToHome) {
-    return <Navigate to="/" />
-  }
-
-
+  const { register, handleSubmit, formState: { errors } } = useForm()
+  const navigate = useNavigate();
   return (
     <>
 
-      <form onSubmit={handleSubmit(newSculpture => { createSculptures(newSculpture).then(()=>setGoToHome(true))})} className="container-form">
+      <form onSubmit={handleSubmit(newSculpture => { createSculptures(newSculpture).then(()=>navigate("/"))})} className="container-form">
 
         <label>Obra:
           <input {...register("title", { required: "El campo obra esta vacio" })} type="text" placeholder='Escribe el nombre de la obra' />
@@ -48,14 +39,11 @@ const Form = () => {
         <label>Imagen de la Escultura:
           <input {...register("imageUrl", { required: "Hace falta un link", pattern: { value: /^(ftp|http|https):\/\/[^ "]+$/, message: "Sólo es válido formato http" } })} placeholder="Escribe el link de tu imagen" type="link" />
           {errors.imageUrl && <div className="text-error">{errors.imageUrl.message}</div>}
-          {/* <input className="img-file" type="file" name="imagen" accept="image/*"/> */}
         </label>
 
         <div className="buttons-container">
           <button type="submit" className="button" style={{ backgroundColor: "#43766C"}}>Guardar</button>
-          <Link to="/">
-            <button type="submit" className="button" style={{ backgroundColor: "#43766C"}}>Cancelar</button>
-          </Link>
+          <button onClick={() => navigate("/")} className="button" style={{ backgroundColor: "#43766C"}}>Cancelar</button>
         </div>
 
       </form>

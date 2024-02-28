@@ -1,5 +1,3 @@
-/* import { useState, useEffect } from 'react'; */
-/* import axios from 'axios'; */
 import { Link, useLoaderData } from 'react-router-dom';
 import Card from "../components/Card";
 
@@ -15,7 +13,6 @@ const Home = () => {
         Explorando la Belleza </h2>
       <Link to="/add-sculpture"><button className="button" style={{ backgroundColor: "#43766C", margin: '10px' }}>Agregar Escultura</button></Link>
       <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-        {/* Renderizar las tarjetas con los datos de la API */}
         {sculptures.map((sculpture) => (
           <Card key={sculpture.id} data={sculpture} />
         ))}
