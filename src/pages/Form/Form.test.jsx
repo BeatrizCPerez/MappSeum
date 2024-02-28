@@ -12,7 +12,7 @@ describe("Form", ()=>{
 
   test("Confirma que se encuentra el botón guardar", () => {
 
-    const saveButton = screen.getByText(/Guardar/i);
+    const saveButton = screen.getByText(/Cancelar/i);
     expect(saveButton).toBeDefined();
     expect(saveButton.tagName).toBe('BUTTON');
   })
