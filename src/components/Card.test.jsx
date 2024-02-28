@@ -2,9 +2,6 @@ import { render } from '@testing-library/react';
 import Card from './Card'
 import { MemoryRouter } from "react-router";
 
-
-
-describe('Card component', () => {
  test('should receive an image URL through a prop', () => {
     const testData = {
       id: '1',
@@ -19,4 +16,3 @@ describe('Card component', () => {
     render(<MemoryRouter><Card data={testData} /></MemoryRouter>);
 
  });
-});
