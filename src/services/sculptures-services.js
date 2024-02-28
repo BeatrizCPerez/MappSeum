@@ -25,7 +25,7 @@ export const getSculptureById = async (id) => {
 export const deleteSculptures = async (id) => {
     const result = await Swal.fire({
         title: '¿Estás seguro que quieres eliminar?',
-        text: "¡No podrás revertir esto!",
+        text: "No podrás revertir este cambio",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
@@ -41,18 +41,14 @@ export const deleteSculptures = async (id) => {
 
         if (data) {
             Swal.fire(
-                '¡Eliminado!',
-                `La escultura ha sido eliminada correctamente ${data.title}`,
-                'success'
+                `La escultura ${data.title} ha sido eliminada correctamente`
             ).then(() => {
                 // Recargar la página después de eliminar la escultura
                 window.location.reload();
             });
         } else {
             Swal.fire(
-                'Error',
-                'Hubo un problema al intentar eliminar la escultura.',
-                'error'
+                'Hubo un problema al intentar eliminar la escultura.'
             );
         }
     }
@@ -77,15 +73,11 @@ export const editSculptures = async (id, data) => {
 
     if (response) {
         Swal.fire(
-            '¡Editado!',
             'Tu escultura ha sido editada con éxito.',
-            'success'
         );
     } else {
         Swal.fire(
-            'Error',
             'Hubo un problema al intentar editar la escultura.',
-            'error'
         );
     }
 
