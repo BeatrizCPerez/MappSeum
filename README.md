@@ -7,7 +7,7 @@
 - [ESTRUCTURA DEL PROYECTO](#ESTRUCTURA-DEL-PROYECTO)
 - [LENGUAJES Y HERRAMIENTAS UTILIZADAS](#LENGUAJES-Y-HERRAMIENTAS-UTILIZADAS)
 - [INSTALACIÓN](#INSTALACIÓN)
-- [COLABORADORAS](#COLABORADORAS-:family:)
+- [COLABORADORAS](#COLABORADORAS)
 
 ## DESCRIPCIÓN
 
@@ -82,9 +82,7 @@ Utiliza json-server para simular una API.
 npm run api
 ```
 
-***
-
-## COLABORADORAS :family:
+## COLABORADORAS
 - Scrum Master: [Leite](https://github.com/leiteway)
 - Product Owner: [Beatriz C](https://github.com/BeatrizCPerez)
 - Web developer: [Kris](https://github.com/krisneiras)
