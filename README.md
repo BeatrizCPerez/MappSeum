@@ -1,9 +1,19 @@
 # MappSeum
-
 ¡Bienvenido al Museo de Esculturas, MappSeum!
+
+## Contenido
+
+- [DESCRIPCIÓN](#DESCRIPCIÓN)
+- [ESTRUCTURA DEL PROYECTO](#ESTRUCTURA-DEL-PROYECTO)
+- [LENGUAJES Y HERRAMIENTAS UTILIZADAS](#LENGUAJES-Y-HERRAMIENTAS-UTILIZADAS)
+- [INSTALACIÓN](#INSTALACIÓN)
+- [COLABORADORAS](#COLABORADORAS)
+
+## DESCRIPCIÓN
+
 Esta aplicación web fue desarrollada con React y permite gestionar esculturas mediante operaciones CRUD. A continuación, encontrarás detalles adicionales sobre la estructura, funcionalidades y pasos específicos para el CRUD.
 
-## Estructura del Proyecto:
+## ESTRUCTURA DEL PROYECTO
 
 ### Página Principal (Listado de Esculturas):
 
@@ -17,8 +27,6 @@ Al hacer clic en "Eliminar" nos aparecerá una confirmación preguntándonos si 
 
 ![Botones de Acción](src/assets/Botones.PNG)
 
-***
-
 ### Página de Edición (Modificar Escultura):
 
 Accesible desde la página principal al hacer clic en el botón "Modificar" de una escultura.
@@ -27,12 +35,9 @@ Permite realizar modificaciones y guardar los cambios mediante el método PUT.
 
 ![Página de Edición](src/assets/Pagina-añade.PNG)
 
-***
-
 ### Página de Agregar (Nueva Escultura):
 
 Accesible desde la página principal haciendo clic en el botón "Agregar Escultura".
-
 
 ![Botón Agregar](src/assets/Boton-agregar.PNG)
 
@@ -41,7 +46,6 @@ Al agregar una nueva escultura, esta se refleja en la página principal. Al rell
 
 La página principal muestra un listado completo de esculturas con detalles específicos. Explora cada tarjeta para obtener información detallada sobre cada obra en el museo.
 
-***
 ## LENGUAJES Y HERRAMIENTAS UTILIZADAS :hammer:
 <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg" title="VSCode" alt="VSCode" width="40" height="40"/>&nbsp;
@@ -56,9 +60,7 @@ La página principal muestra un listado completo de esculturas con detalles espe
     <img src="https://github.com/devicons/devicon/blob/master/icons/trello/trello-original.svg" title="Trello" alt="Trello" width="40" height="40"/>&nbsp; 
 </div>
 
-***
-
-# Ejecución del Proyecto:
+## INSTALACIÓN
 
 ### Instalación de Dependencias:
 
