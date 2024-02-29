@@ -67,16 +67,21 @@ La página principal muestra un listado completo de esculturas con detalles espe
 
 ## INSTALACIÓN
 
-### Clonar el repositorio:
+###Clonar el repositorio:
 
-```bash $ git clone https://github.com/BeatrizCPerez/MappSeum```
+```bash
+$ git clone https://github.com/BeatrizCPerez/MappSeum
+```
 
-```bash $ cd MappSeum
+```bash
+$ cd MappSeum
+```
 
 ### Instalar las dependencias:
 
 1. Asegúrate de tener Node.js instalado.
 2. Ejecuta el siguiente comando para instalar las dependencias del proyecto:
+
 ```bash
 $ npm install
 ```
