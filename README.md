@@ -1,7 +1,7 @@
 # MappSeum
 ¡Bienvenido al Museo de Esculturas, MappSeum!
 
-## Contenido
+## CONTENIDO
 
 - [DESCRIPCIÓN](#DESCRIPCIÓN)
 - [ESTRUCTURA DEL PROYECTO](#ESTRUCTURA-DEL-PROYECTO)
@@ -54,37 +54,51 @@ La página principal muestra un listado completo de esculturas con detalles espe
 ## LENGUAJES Y HERRAMIENTAS UTILIZADAS
 <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg" title="VSCode" alt="VSCode" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" title="GIT" alt="GIT" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;   
-    <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" title="css3" alt="css3" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/github/github-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;   
-    <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg" title=javascript width="40" height="40">    
-    <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" title="React" alt="React" width="40" height="40"/>&nbsp;     
-    <img src="https://github.com/devicons/devicon/blob/master/icons/json/json-original.svg" title="JSON" alt="JSON" width="40" height="40"/>&nbsp;    
-    <img src="https://github.com/devicons/devicon/blob/master/icons/reactrouter/reactrouter-original.svg" title="ReactRouter" alt="ReactRouter" width="40" height="40"/>&nbsp;  
-    <img src="https://github.com/devicons/devicon/blob/master/icons/trello/trello-original.svg" title="Trello" alt="Trello" width="40" height="40"/>&nbsp; 
+  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" title="GIT" alt="GIT" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;   
+  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" title="css3" alt="css3" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/github/github-original.svg" title="Github" alt="Github" width="40" height="40"/>&nbsp;   
+  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg" title="Javascript" title="Javascript" width="40" height="40">    
+  <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" title="React" alt="React" width="40" height="40"/>&nbsp;     
+  <img src="https://github.com/devicons/devicon/blob/master/icons/json/json-original.svg" title="JSON" alt="JSON" width="40" height="40"/>&nbsp;    
+  <img src="https://github.com/devicons/devicon/blob/master/icons/reactrouter/reactrouter-original.svg" title="ReactRouter" alt="ReactRouter" width="40" height="40"/>&nbsp;  
+  <img src="https://github.com/devicons/devicon/blob/master/icons/trello/trello-original.svg" title="Trello" alt="Trello" width="40" height="40"/>&nbsp; 
+  <img src="https://github.com/devicons/devicon/blob/master/icons/vitejs/vitejs-original.svg" title="Vite" alt="Vite" width="40" height="40"/>&nbsp; 
+  <img src="https://github.com/devicons/devicon/blob/master/icons/vitest/vitest-original.svg" title="Vitest" alt="Vitest" width="40" height="40"/>&nbsp; 
+  <img src="https://github.com/devicons/devicon/blob/master/icons/figma/figma-original.svg" title="Figma" alt="Figma" width="40" height="40"/>&nbsp;
 </div>
 
 ## INSTALACIÓN
 
-### Instalación de Dependencias:
+### Clonar el repositorio:
+
+```bash
+$ git clone https://github.com/BeatrizCPerez/MappSeum
+```
+
+```bash
+$ cd MappSeum
+```
+
+### Instalar las dependencias:
 
 1. Asegúrate de tener Node.js instalado.
 2. Ejecuta el siguiente comando para instalar las dependencias del proyecto:
+
 ```bash
-npm install
-```
-   
-### Iniciar el Servidor de Desarrollo:
-```bash
-npm run dev
+$ npm install
 ```
 
 ### Iniciar la API Simulada:
 
 Utiliza json-server para simular una API.
 ```bash
-npm run api
+$ npm run api
+```   
+
+### Iniciar el Servidor de Desarrollo:
+```bash
+$ npm run dev
 ```
 
 ## COLABORADORAS
