@@ -1,7 +1,7 @@
 # MappSeum
 ¡Bienvenido al Museo de Esculturas, MappSeum!
 
-## Contenido
+## CONTENIDO
 
 - [DESCRIPCIÓN](#DESCRIPCIÓN)
 - [ESTRUCTURA DEL PROYECTO](#ESTRUCTURA-DEL-PROYECTO)
