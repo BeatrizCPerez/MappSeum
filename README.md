@@ -67,7 +67,7 @@ La página principal muestra un listado completo de esculturas con detalles espe
 
 ## INSTALACIÓN
 
-###Clonar el repositorio:
+### Clonar el repositorio:
 
 ```bash
 $ git clone https://github.com/BeatrizCPerez/MappSeum
