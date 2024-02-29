@@ -1,9 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
-import Create from "../pages/Create";
-import Edit from "../pages/Edit";
 import NavFooter from "../components/NavFooter";
 import { getSculptures } from "../services/sculptures-services";
+import Form from "../pages/Form/Form";
 
 const router = createBrowserRouter([
   {
@@ -17,17 +16,14 @@ const router = createBrowserRouter([
       },
       {
         path: "/add-sculpture",
-        element: <Create />,
+        element: <Form method="post"/>,
       },
       {
         path: "/edit-sculpture/:id",
-        element: <Edit />
+        element: <Form method="put"/>
       }
     ]
   }
-
-
-
 ]);
 
 export default router;
