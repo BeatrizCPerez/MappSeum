@@ -1,3 +1,9 @@
+export const uploadImg =  async (imageData) =>{
+    
+}
+
+
+
 // GET
 export const getSculptures = async () => {
     const response = await fetch('http://localhost:3000/sculptures');

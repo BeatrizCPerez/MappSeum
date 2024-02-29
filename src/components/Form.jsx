@@ -1,14 +1,34 @@
-import React from 'react'
+import { useState } from 'react'
 import './Form.css'
 import { createSculptures } from '../services/sculptures-services'
 import { useForm } from 'react-hook-form'
 import { Navigate } from 'react-router-dom'
 import { Link } from 'react-router-dom';
+import axios from 'axios'
 
 const Form = () => {
-  const { register, handleSubmit, reset, formState: {errors} } = useForm()
+  const { register, handleSubmit, reset, formState: {errors} } = useForm();
 
-  const [goToHome, setGoToHome] = React.useState(false);
+  const [ setImgUrl ] = useState("");
+
+  const chargeUploadImage = async (e) => {
+    const file = e.target.files[0];
+
+    const data = new FormData();
+
+    data.append("file" , file);
+    data.append("upload_presets" , "Presets_Mappseum")
+
+  //peticion a la API de cloudinary a traves de un metodo POST
+    const response = await axios.post("https://api.cloudinary.com/v1_1/dxxfw1lne/image/upload", data);
+
+
+
+    //seteamos lo que nos responde la API
+    setImgUrl(response.data.secure_url)
+  };
+
+  const [goToHome, setGoToHome] = useState(false);
 
   if (goToHome) {
     return <Navigate to="/" />
@@ -43,11 +63,11 @@ return (
         </label>
 
         <label>Imagen de la Escultura:
-        <input {...register("imageUrl", {required:"Hace falta un link", pattern: {value:/^(ftp|http|https):\/\/[^ "]+$/, message:"Sólo es válido formato http"}})} placeholder="Escribe el link de tu imagen" type="link"/>
+        <input onChange={chargeUploadImage} className="img-file" type="file" name="imagen" accept="image/*" {...register("imageUrl", {required:"Hace falta un archivo"})}/>
         {errors.imageUrl && <div className="text-error">{errors.imageUrl.message}</div>}
-        {/* <input className="img-file" type="file" name="imagen" accept="image/*"/> */}
         </label>
 
+        
         <div className="buttons-container">
           <button type="submit">Guardar</button>
           <Link to="/">

@@ -28,22 +28,31 @@
       "location": "Galeria de la Academia, Florencia, Italia"
     },
     {
-      "id": "1767",
-      "imageUrl": "https://react-hook-form.com/docs/useform/reset",
-      "title": "dgd",
-      "author": "dgd",
-      "material": "dgdg",
-      "year": "55",
-      "location": "dgdg"
+      "id": "5c4d",
+      "imageUrl": "[object FileList]",
+      "title": "Cleopatra",
+      "author": "Kristy",
+      "material": "oro",
+      "year": "2024",
+      "location": "Egipto"
     },
     {
-      "id": "2cb1",
-      "imageUrl": "https://react-hook-form.com/docs/useform/reset",
-      "title": "zfsf",
-      "author": "sfsf",
-      "material": "fdgd",
-      "year": "66",
-      "location": "gfdg"
+      "id": "9c5b",
+      "imageUrl": "[object FileList]",
+      "title": "scvsd",
+      "author": "ssv",
+      "material": "vdg",
+      "year": "333",
+      "location": "dgd"
+    },
+    {
+      "id": "9e30",
+      "imageUrl": "[object FileList]",
+      "title": "df",
+      "author": "sf",
+      "material": "dg",
+      "year": "333",
+      "location": "ddd"
     }
   ]
 }

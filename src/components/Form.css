@@ -75,10 +75,22 @@ form input {
     font-size: 0.8rem;
 }
 
-/* .img-file {
+.img-file {
     border-bottom: none;
-    color: #43766c;
-} */
+}
+
+input[type="file"]::file-selector-button {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 0.5em;
+    color: white;
+    background-color: #43766c;
+    border: none;
+    width: 12em;
+    padding: 0.4em;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: center;
+   }
 
 @media (max-width: 768px) {
     .container-form {
