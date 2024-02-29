@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import NavFooter from "./NavFooter";
+import NavFooter from "../components/NavFooter";
 import { expect } from "vitest";
 import { MemoryRouter } from "react-router";
 import '@testing-library/jest-dom';

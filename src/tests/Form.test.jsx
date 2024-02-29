@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Form from "./Form";
+import Form from "../pages/Form/Form";
 import { expect } from "vitest";
 import { MemoryRouter } from "react-router";
 import '@testing-library/jest-dom';
