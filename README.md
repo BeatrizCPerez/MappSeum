@@ -67,24 +67,30 @@ La página principal muestra un listado completo de esculturas con detalles espe
 
 ## INSTALACIÓN
 
-### Instalación de Dependencias:
+### Clonar el repositorio:
+
+```bash $ git clone https://github.com/BeatrizCPerez/MappSeum```
+
+```bash $ cd MappSeum
+
+### Instalar las dependencias:
 
 1. Asegúrate de tener Node.js instalado.
 2. Ejecuta el siguiente comando para instalar las dependencias del proyecto:
 ```bash
-npm install
-```
-   
-### Iniciar el Servidor de Desarrollo:
-```bash
-npm run dev
+$ npm install
 ```
 
 ### Iniciar la API Simulada:
 
 Utiliza json-server para simular una API.
 ```bash
-npm run api
+$ npm run api
+```   
+
+### Iniciar el Servidor de Desarrollo:
+```bash
+$ npm run dev
 ```
 
 ## COLABORADORAS
