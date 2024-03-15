@@ -48,12 +48,12 @@ const MoreDetails = styled.div`
 `
 
 const Card = ({ data }) => {
-  const { id, imageUrl, title, author, material, year, location } = data;
+  const { id, image_url, title, author, material, year, location } = data;
   const navigate = useNavigate();
 
   return (
     <StyledCard key={id}>
-      <SculptureImage style={{background: `url(${imageUrl}) center/cover no-repeat`}}>
+      <SculptureImage style={{background: `url(${image_url}) center/cover no-repeat`}}>
         <Frame src='src/assets/frame.png' alt={title} />
       </SculptureImage>
 

@@ -1,12 +1,12 @@
 import axios from 'axios';
 import Swal from 'sweetalert2';
 
-
+const url = "http://localhost:5000/api"
 // GET
 
 export const getSculptures = async () => {
 
-    const response = await axios.get("http://localhost:3000/sculptures");
+    const response = await axios.get(`${url}`);
     const data = await response.data;
     return data;
 }
@@ -15,7 +15,7 @@ export const getSculptures = async () => {
 
 export const getSculptureById = async (id) => {
 
-    const response = await axios.get(`http://localhost:3000/sculptures/${id}`);
+    const response = await axios.get(`${url}/${id}`);
     const data = await response.data;
     return data;
 }
@@ -36,7 +36,7 @@ export const deleteSculptures = async (id) => {
 
     if (result.isConfirmed) {
 
-        const response = await axios.delete(`http://localhost:3000/sculptures/${id}`)
+        const response = await axios.delete(`${url}/${id}`)
         const data = await response.data
 
         if (data) {
@@ -59,7 +59,7 @@ export const deleteSculptures = async (id) => {
 export const createSculptures = async (newSculptures) => {
     Swal.fire("Obra creada con éxito!");
 
-    const response = await axios.post("http://localhost:3000/sculptures", newSculptures)
+    const response = await axios.post(`${url}`, newSculptures)
 
     return response;
 }
@@ -69,7 +69,7 @@ export const createSculptures = async (newSculptures) => {
 
 export const editSculptures = async (id, data) => {
 
-    const response = await axios.put(`http://localhost:3000/sculptures/${id}`, data)
+    const response = await axios.put(`${url}/${id}`, data)
 
     if (response) {
         Swal.fire(

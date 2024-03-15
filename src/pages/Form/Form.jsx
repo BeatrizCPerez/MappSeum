@@ -18,7 +18,7 @@ const Form = ({ method }) => {
       setValue("year", sculpture.year)
       setValue("material", sculpture.material)
       setValue("location", sculpture.location)
-      setValue("imageUrl", sculpture.imageUrl)
+      setValue("image_url", sculpture.image_url)
     }
     getOneSculpture();
 
@@ -55,7 +55,7 @@ const Form = ({ method }) => {
 
         <label>Imagen de la Escultura:
           <input {...register("imageUrl", { required: "Hace falta un link", pattern: { value: /^(ftp|http|https):\/\/[^ "]+$/, message: "Sólo es válido formato http" } })} placeholder="Escribe el link de tu imagen" type="link" />
-          {errors.imageUrl && <div className="text-error">{errors.imageUrl.message}</div>}
+          {errors.image_url && <div className="text-error">{errors.imageUrl.message}</div>}
         </label>
 
         <div className="buttons-container">
