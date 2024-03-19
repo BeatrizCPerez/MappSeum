@@ -57,11 +57,19 @@ export const deleteSculptures = async (id) => {
 // POST
 
 export const createSculptures = async (newSculptures) => {
+    
+    try{
+        const response = await axios.post(`${url}`, newSculptures)
+
+        return response;
+    }
+
+    catch(error){
+        console.log('Error uploading new sculpture')
+    }
+
     Swal.fire("Obra creada con éxito!");
 
-    const response = await axios.post(`${url}`, newSculptures)
-
-    return response;
 }
 
 

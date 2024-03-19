@@ -6,10 +6,10 @@ import { createSculptures, editSculptures, getSculptureById } from '../../servic
 const Form = ({ method }) => {
   const navigate = useNavigate();
   const { register, handleSubmit, setValue, formState: { errors } } = useForm();
+  const sculptureId = useParams().id;
 
   if (method === "put") {
 
-    const sculptureId = useParams().id;
 
     const getOneSculpture = async () => {
       const sculpture = await getSculptureById(sculptureId);
@@ -54,8 +54,8 @@ const Form = ({ method }) => {
         </label>
 
         <label>Imagen de la Escultura:
-          <input {...register("imageUrl", { required: "Hace falta un link", pattern: { value: /^(ftp|http|https):\/\/[^ "]+$/, message: "Sólo es válido formato http" } })} placeholder="Escribe el link de tu imagen" type="link" />
-          {errors.image_url && <div className="text-error">{errors.imageUrl.message}</div>}
+          <input {...register("image_url", { required: "Hace falta un link", pattern: { value: /^(http|https):\/\/[^ "]+$/, message: "Sólo es válido formato http" } })} placeholder="Escribe el link de tu imagen" type="link" />
+          {errors.image_url && <div className="text-error">{errors.image_url.message}</div>}
         </label>
 
         <div className="buttons-container">
